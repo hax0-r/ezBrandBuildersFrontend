@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Nekst-Medium;
+  src: url(../../Demo_Fonts/Fontspring-DEMO-nekst-medium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  font-family: Nekst-Medium;
+
+  &::selection {
+    background-color: #5f29b7;
+    color: #ffffff90;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff49;
+  border: 0px none #ffffff;
+  border-radius: 28px;
+  transition: 200ms all;
+}
+
+::-webkit-scrollbar-track {
+  background: #000001;
+  border: 0px none #00000000;
+}

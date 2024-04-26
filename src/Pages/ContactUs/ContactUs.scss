@@ -1,0 +1,274 @@
+@font-face {
+    font-family: NekstMedium;
+    src: url(../../Nekst/Nekst-Medium.otf);
+
+}
+
+@font-face {
+    font-family: NekstSemiBold;
+    src: url(../../Nekst/Nekst-SemiBold.otf);
+}
+
+@font-face {
+    font-family: NekstRegular;
+    src: url(../../Nekst/Nekst-Regular.otf);
+}
+
+
+.contactUs {
+    background: url(../../assets/ContactUs/contactUs.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    align-items: center;
+    padding: 5vw 3vw;
+
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90rem;
+        width: 100%;
+        align-items: center;
+
+        h1 {
+            font-family: NekstRegular;
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 95%;
+            letter-spacing: -2%;
+            max-width: 42.38rem;
+            color: #FFFFFF;
+            width: 100%;
+        }
+
+        .right {
+            .main {
+                display: flex;
+                background: rgb(0, 0, 0);
+                flex-direction: column;
+                width: 40rem;
+                gap: 2rem;
+                padding: 3rem 4rem;
+                border-radius: 1rem;
+
+                h1 {
+                    color: rgb(255, 255, 255);
+                    font-family: NekstMedium;
+                    font-size: 5.14rem;
+                    font-weight: 400;
+                    line-height: 95%;
+                    letter-spacing: -2%;
+                    text-align: left;
+                    padding-bottom: 2rem;
+                }
+
+                .inputs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    input {
+                        height: 4rem;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 0.06rem solid rgb(104, 92, 123);
+                        opacity: 0.8;
+                        color: rgb(255, 255, 255);
+                        font-family: NekstMedium;
+                        font-size: 1.31rem;
+                        font-weight: 400;
+                        line-height: 95%;
+                        letter-spacing: 0%;
+
+                        &::placeholder {
+                            opacity: 0.7;
+                            color: rgb(140, 116, 180);
+                            font-family: NekstRegular;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            line-height: 95%;
+                            letter-spacing: 0%;
+                        }
+                    }
+                }
+
+                button {
+                    border-radius: 2.5rem;
+                    background: rgb(95, 41, 183);
+                    border: none;
+                    padding: 1.4rem 1rem;
+                    color: rgb(255, 255, 255);
+                    font-family: NekstSemiBold;
+                    font-size: 1.55rem;
+                    font-weight: 400;
+                    line-height: 99%;
+                    cursor: pointer;
+                    letter-spacing: -2%;
+                }
+
+                textarea {
+                    background-color: transparent;
+                    border: 0.06rem solid rgb(104, 92, 123);
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    margin-top: 1rem;
+                    opacity: 0.8;
+                    color: rgb(255, 255, 255);
+                    font-family: NekstMedium;
+                    font-size: 1.31rem;
+                    font-weight: 400;
+                    line-height: 95%;
+                    letter-spacing: 0%;
+                    padding: 1rem 0 1rem 0;
+
+                    &::placeholder {
+                        opacity: 0.7;
+                        color: rgb(140, 116, 180);
+                        font-family: NekstRegular;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        line-height: 95%;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:1560px) {
+        .box {
+            h1 {
+                font-size: 4.5rem;
+            }
+
+            .right {
+                .main {
+                    h1 {
+                        font-size: 3.5rem;
+                    }
+
+                    .inputs {
+                        input {
+                            font-size: 1rem;
+
+                            &::placeholder {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+
+                    textarea {
+                        font-size: 1rem;
+
+                        &::placeholder {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1320px) {
+    .contactUs {
+
+        .box {
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            .right {
+                .main {
+                    width: 30rem;
+                    gap: 1rem;
+                    padding: 2rem 3rem;
+
+                    h1 {
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .contactUs {
+
+        .box {
+            flex-direction: column;
+            row-gap: 4rem;
+
+            h1 {
+                padding-top: 3rem;
+                max-width: 39rem;
+                text-align: center;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .contactUs {
+
+        .box {
+            row-gap: 2rem;
+
+            h1 {
+                padding-top: 3rem;
+                font-size: 2rem;
+                max-width: 20rem;
+            }
+
+            .right {
+                padding-bottom: 2rem;
+
+                .main {
+                    padding: 1rem 1rem;
+                    width: 20rem;
+
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    .inputs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        input {
+                            height: 3rem;
+                            font-size: 1rem;
+
+                            &::placeholder {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    button {
+                        padding: 1rem;
+                        font-size: 1.25rem;
+                    }
+
+                    textarea {
+                        height: 3rem;
+                        font-size: 1rem;
+                        scrollbar-width: none;
+
+                        &::placeholder {
+                            font-size: 1rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

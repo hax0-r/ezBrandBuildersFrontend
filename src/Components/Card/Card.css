@@ -1,0 +1,35 @@
+.card {
+    width: 21rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25rem;
+    border: 0.06rem solid rgb(64, 46, 92);
+    border-radius: 2.5rem;
+    opacity: 0.7;
+
+    h2 {
+        color: rgb(255, 255, 255);
+        font-family: NekstMedium;
+        font-size: 2.13rem;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -4%;
+    }
+
+    svg {
+        margin: 1rem 0;
+    }
+
+    p {
+        color: rgb(233, 227, 244);
+        font-family: NekstRegular;
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: 0.8;
+        line-height: 135%;
+        letter-spacing: -4%;
+    }
+
+}
