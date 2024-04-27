@@ -348,7 +348,7 @@
                     h5 {
                         color: #FFF;
                         border-radius: 0.84375rem;
-                        background: #A035E2;
+                        background: #762cec;
                         font-family: NekstRegular;
                         letter-spacing: .03rem;
                         font-size: 0.625rem;
@@ -356,6 +356,7 @@
                         font-weight: 800;
                         letter-spacing: 0.05206rem;
                         position: absolute;
+                        box-shadow: rgba(0, 0, 0, 0.13) 0px 7px 29px 0px;
                         top: 2rem;
                         right: -2rem;
                         padding: .4rem 1.5rem;

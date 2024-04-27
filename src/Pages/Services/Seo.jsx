@@ -2,44 +2,29 @@ import React, { useState } from 'react'
 import './Services.css'
 import { ServicesData } from '../../Data/ServicesData'
 import { IoSearch } from 'react-icons/io5'
-import ScrollProgress from '../../Components/ScrollProgress';
 
-export default function Services() {
+export default function Seo() {
 
-    const [filteredData, setFilteredData] = useState(ServicesData);
+    const [filteredData, setFilteredData] = useState([]);
 
     const ServicesSearchHandler = (e) => {
-        let value = e.target.value.trim().toLowerCase()
-        console.log();
-        const filtered = ServicesData.filter(item => item.title.toLowerCase().includes(value))
+        const value = e.target.value.trim().toLowerCase();
+        const filtered = ServicesData.filter(item =>
+            item.category === "seo" && item.title.toLowerCase().includes(value)
+        );
         setFilteredData(filtered);
-    }
+    };
 
-    const filterByCategory = (category) => {
-        if (category === "All") {
-            const uniqueTitles = new Set();
-            const filtered = ServicesData.filter(service => {
-                if (!uniqueTitles.has(service.title)) {
-                    uniqueTitles.add(service.title);
-                    return true;
-                }
-                return false;
-            });
-            setFilteredData(filtered);
-        } else {
-            let dataCategory = ServicesData.filter(service => service.category === category);
-            setFilteredData(dataCategory);
-        }
-    }
-
+    useState(() => {
+        ServicesSearchHandler({ target: { value: '' } });
+    }, []);
 
     return (
         <>
-        <ScrollProgress/>
             <div className="ServicesPage">
                 <div className="page1">
                     <div className="main">
-                        <h1>Our <br /> Services</h1>
+                        <h1>Software <br /> Development</h1>
                         <p>Discover unparalleled service excellence with our top-tier provider, delivering excellence in every interaction</p>
                     </div>
                 </div>
@@ -47,9 +32,6 @@ export default function Services() {
                     <div className="main">
                         <div className="head">
                             <div className="servicesBtns">
-                                <button onClick={() => filterByCategory("All")}>All</button>
-                                <button onClick={() => filterByCategory("Digital Marketing")}>Digital Marketing</button>
-                                <button onClick={() => filterByCategory("Web Development")}>Web Development</button>
                             </div>
                             <div className='servicesSearch'>
                                 <input onChange={ServicesSearchHandler} type="text" placeholder='Search...' />

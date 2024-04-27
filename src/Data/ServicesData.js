@@ -11,7 +11,7 @@ export const ServicesData = [
     },
     {
         category: "Web Development",
-        title: "web design",
+        title: "UI/UX",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
     {
@@ -27,21 +27,6 @@ export const ServicesData = [
     {
         category: "Web Development",
         title: "full stack development",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Web Development",
-        title: "CMS devlopment",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Web Development",
-        title: "Front end",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Web Development",
-        title: "Back end",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 
@@ -62,37 +47,7 @@ export const ServicesData = [
     },
     {
         category: "Digital Marketing",
-        title: "Content Marketing",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "SEO",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "E-Commerce",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
         title: "Google Ads PPC",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "Amazon PPC",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "Link Building",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "Strategy",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
     {
@@ -102,42 +57,12 @@ export const ServicesData = [
     },
     {
         category: "Digital Marketing",
-        title: "Meta Ads",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "LinkedIn Ads",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
         title: "Research",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
     {
         category: "Digital Marketing",
-        title: "Branding",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "Local SEO",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "Affiliate Marketing",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
         title: "SEM",
-        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
-    },
-    {
-        category: "Digital Marketing",
-        title: "Email Marketing",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 
@@ -252,6 +177,77 @@ export const ServicesData = [
     {
         category: "Technology Training",
         title: "title",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+
+
+    // ====================================
+    // ====================================
+
+    // SEO
+
+    // ====================================
+    // ====================================
+
+
+    {
+        category: "seo",
+        title: "Link Building",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "seo",
+        title: "On Page SEO",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "seo",
+        title: "Local SEO",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "seo",
+        title: "Keyword Research",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "seo",
+        title: "Technical SEO",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+
+    // ====================================
+    // ====================================
+
+    // Graphic Designing
+
+    // ====================================
+    // ====================================
+
+
+    {
+        category: "graphic designing",
+        title: "Logo Designing",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "graphic designing",
+        title: "Illustrations",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "graphic designing",
+        title: "3D Models",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "graphic designing",
+        title: "2D/3D Designs",
+        description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
+    },
+    {
+        category: "graphic designing",
+        title: "Social Media Posts",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 ]

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './PricingSection.css'
 import { FaCheck } from 'react-icons/fa'
+import SimpleButton from '../SimpleButton/SimpleButton';
 
 const PricingSection = () => {
 
@@ -41,7 +42,7 @@ const PricingSection = () => {
                                 <li> <FaCheck /> Monthly Report </li>
                                 <li> <FaCheck /> 24/7 Support </li>
                                 <li> .</li>
-                                <button>Choose plan</button>
+                                <SimpleButton button="Select" />
                             </div>
                             <div className="second">
                                 <h1>{currency === "USD" ? `$${prices.USD.professional}` : `${prices.PKR.professional}`} <span> /month</span> </h1>
@@ -55,7 +56,7 @@ const PricingSection = () => {
                                 <li> <FaCheck /> 24/7 Support</li>
                                 <li>     .</li>
                                 <li>     .</li>
-                                <button>Choose plan</button>
+                                <SimpleButton button="Select" />
                             </div>
                             <div className="third">
                                 <h5>MOST POPULAR</h5>
@@ -70,7 +71,7 @@ const PricingSection = () => {
                                 <li> <FaCheck /> 24/7 Support</li>
                                 <li>     .</li>
                                 <div>
-                                    <button>Choose plan</button>
+                                    <SimpleButton button="Select" />
                                 </div>
                             </div>
                         </div>

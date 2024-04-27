@@ -15,6 +15,8 @@ import CyberSecurity from '../Pages/Services/CyberSecurity'
 import CloudeServices from '../Pages/Services/CloudeServices'
 import SoftwareDevelopment from '../Pages/Services/SoftwareDevelopment'
 import TechnologyTaning from '../Pages/Services/TechnologyTaning'
+import Seo from '../Pages/Services/Seo'
+import GraphicDesigning from '../Pages/Services/GraphicDesigning'
 
 export default function Router() {
     return (
@@ -32,6 +34,8 @@ export default function Router() {
                 <Route path="/cloud-services" element={<CloudeServices />} />
                 <Route path="/software-development" element={<SoftwareDevelopment />} />
                 <Route path="/technology-training" element={<TechnologyTaning />} />
+                <Route path="/graphic-designing" element={<GraphicDesigning />} />
+                <Route path="/seo" element={<Seo />} />
                 <Route path='/signin' element={<SignIn />} />
                 <Route path='*' element={<Error />} />
             </Routes>

@@ -3,6 +3,7 @@ import './ContactUs.scss'
 import { errorNotify, successNotify } from '../../Components/Toastify/Toastify';
 import axios from 'axios';
 import { BASE_URL } from '../../Global';
+import ScrollProgress from '../../Components/ScrollProgress';
 
 export default function ContactUs() {
 
@@ -12,13 +13,13 @@ export default function ContactUs() {
   const [message, setMessage] = useState("")
 
   const formHandler = (obj) => {
-   axios.post(`${BASE_URL}/users`,obj)
-   .then((res)=>{
-    console.log(res);
-   })
-   .catch((err)=>{
-    console.log(err);
-   })
+    axios.post(`${BASE_URL}/users`, obj)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
   }
 
   const formSubmitHandler = (e) => {
@@ -54,6 +55,7 @@ export default function ContactUs() {
 
   return (
     <>
+      <ScrollProgress />
       <div className="contactUs">
         <div className="box">
           <h1>Fill Out The Form & We’ll be in Touch Shortly</h1>

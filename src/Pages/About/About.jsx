@@ -3,10 +3,12 @@ import './About.css'
 import pg4 from '../../assets/Home/pg4.png'
 import TeamMembers from '../../Components/TeamMembers/TeamMembers'
 import Partners from '../../Components/Partners/Partners'
+import ScrollProgress from '../../Components/ScrollProgress'
 
 export default function About() {
   return (
     <>
+      <ScrollProgress />
       <div className="about">
         <div className="page1">
           <div className="main">

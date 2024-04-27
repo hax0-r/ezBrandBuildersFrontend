@@ -11,31 +11,17 @@ import Button from '../../Components/Button/Button'
 import Partners from '../../Components/Partners/Partners'
 import PricingSection from '../../Components/PricingSection/PricingSection'
 import gsap from "gsap";
-import { motion, useScroll } from 'framer-motion'
 import Model3D from '../../Components/Model3D/Model3D'
+import ScrollProgress from '../../Components/ScrollProgress';
 
 
 
 export default function Home() {
 
-  const { scrollYProgress } = useScroll()
 
   return (
     <>
-      <motion.div
-        style={{
-          scaleX: scrollYProgress,
-          position: "fixed",
-          zIndex: 9,
-          top: 0,
-          right: 0,
-          left: 0,
-          height: 6,
-          background: "#5f29b7",
-          transformOrigin: "0%"
-        }}
-      >
-      </motion.div>
+    <ScrollProgress/>
       <div className="home">
         <div className="page1">
           <div className="mainContainer">

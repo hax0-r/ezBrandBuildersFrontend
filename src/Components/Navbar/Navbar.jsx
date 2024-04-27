@@ -72,7 +72,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/technology-training">SEO <IoCaretForward /></Link>
+                                            <Link to="/seo">SEO <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     SEO.map(({ title, path }, index) => (
@@ -82,7 +82,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/technology-training">Graphic Designing <IoCaretForward /></Link>
+                                            <Link to="/graphic-designing">Graphic Designing <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     graphic_designing.map(({ title, path }, index) => (
@@ -140,7 +140,7 @@ export default function Navbar() {
                             <li className='servicesDropDown'><NavLink to="/contactus">ContactUs</NavLink></li>
                             {/* <li className='servicesDropDown'><NavLink to="/pricing">Pricing</NavLink></li> */}
                             <div className='notificationIcon'>
-                            <MdNotificationAdd id='notificationIcon' />
+                                <MdNotificationAdd id='notificationIcon' />
                             </div>
                         </ul>
                         <Link to={SIGN_IN.signPath}>
