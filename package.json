@@ -24,6 +24,7 @@
     "react-toastify": "^10.0.4",
     "routes": "^2.1.0",
     "sass": "^1.70.0",
+    "smooth-scrollbar": "^8.8.4",
     "swiper": "^11.0.6",
     "three": "^0.162.0"
   },

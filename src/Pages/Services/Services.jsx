@@ -3,6 +3,7 @@ import './Services.css'
 import { ServicesData } from '../../Data/ServicesData'
 import { IoSearch } from 'react-icons/io5'
 import ScrollProgress from '../../Components/ScrollProgress';
+import SmoothScroll from '../../Components/SmoothScroll';
 
 export default function Services() {
 
@@ -35,7 +36,7 @@ export default function Services() {
 
     return (
         <>
-        <ScrollProgress/>
+            <ScrollProgress />
             <div className="ServicesPage">
                 <div className="page1">
                     <div className="main">

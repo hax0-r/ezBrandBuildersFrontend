@@ -14,33 +14,20 @@ import gsap from "gsap";
 import Model3D from '../../Components/Model3D/Model3D'
 import ScrollProgress from '../../Components/ScrollProgress';
 import Loader from '../../Components/Loader/Loader';
+import TextAnimation from '../../Components/TextAnimation/TextAnimation';
 
 
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(true); // Initially set loading to true
+  const [isLoading, setIsLoading] = useState();
 
   useEffect(() => {
-    const hasVisited = sessionStorage.getItem('hasVisited');
-    if (!hasVisited) {
-      setTimeout(() => {
-        setIsLoading(false); // Remove loader after 3 seconds
-        sessionStorage.setItem('hasVisited', 'true');
-      }, 3000);
-    } else {
-      setIsLoading(false); // Remove loader immediately if user has already visited
-    }
-  }, []);
-
-  // State to track whether the 3D model has been loaded
-  const [modelLoaded, setModelLoaded] = useState(false);
-
-  // Function to handle the loading event of the 3D model
-  const handleModelLoad = () => {
-    setModelLoaded(true);
-  };
-
+    setIsLoading(true)
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 3000)
+  }, [])
 
   return (
     <>
@@ -53,12 +40,12 @@ export default function Home() {
           <div className="mainContainer">
             <div className="content">
               <div>
-                <h1 className='gsap_p1_head'>Building Brands  <span>& Solving IT Challenges</span> </h1>
+                <h1 className='gsap_p1_head'><TextAnimation/>  <span>& Solving IT Challenges</span> </h1>
                 <p>At EZ Brand Builders, we provide top-tier IT services which your business needs. With expertise in Web Development, Digital Marketing, Cyber Security, Cloud Services, Software Development, Technology Trainig.Our expert team ensures efficiency and security for your operations.</p>
                 <Button button="Register now" />
               </div>
             </div>
-             <Model3D onLoad={handleModelLoad} />
+            <Model3D />
           </div>
           <div className="overlayBottom"></div>
         </div>
