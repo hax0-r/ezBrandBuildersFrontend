@@ -28,21 +28,21 @@ const TeamMembers = () => {
                         <div className='dataTeamMember'>
                         <img src="/TeamMembers/Talha.png" alt="" />
                         <h1>Muhammad Talha</h1>
-                        <p>As a professional and skilled web developer, adept at crafting robust and dynamic digital solutions</p>
+                        <p>Co-founder of EZ Brand Builders</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='swiper-slide-team-member'>
                         <div className='dataTeamMember'>
                         <img src="/TeamMembers/ali.png" alt="" />
                         <h1>Muhammad Ali</h1>
-                        <p>As the CEO and founder, I am dedicated to pioneering innovation and driving the company's vision forward.</p>
+                        <p>CEO & Founder of EZ Brand Builders</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='swiper-slide-team-member'>
                         <div className='dataTeamMember'>
-                        <img src="/TeamMembers/man.png" alt="" />
-                        <h1>Muhammad Hamza</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, inventore?</p>
+                        <img src="/TeamMembers/aliFather.png" alt="" />
+                        <h1>Muhammad Falak</h1>
+                        <p>CFO at EZ Brand Builders</p>
                         </div>
                     </SwiperSlide>                   
                 </Swiper>

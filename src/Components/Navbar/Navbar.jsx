@@ -7,6 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import gsap from "gsap";
 import Logo from '../Logo';
 import Button from '../Button/Button';
+import { MdNotificationAdd } from 'react-icons/md';
 
 
 export default function Navbar() {
@@ -21,14 +22,6 @@ export default function Navbar() {
 
 
     const rotateSVG = () => {
-        // gsap.to(".left svg", {
-        //     rotation: 360,
-        //     duration: 1,
-        //     delay: .1
-        // });
-        // gsap.to(".left svg path", {
-        //     fill: "#5f29b7"
-        // });
         gsap.to(".left h2", {
             color: "#5f29b7"
         });
@@ -37,13 +30,6 @@ export default function Navbar() {
         });
     }
     const reverseRotateSVG = () => {
-        // gsap.to(".left svg", {
-        //     rotation: 0,
-        //     duration: 1,
-        // });
-        // gsap.to(".left svg path", {
-        //     fill: "white"
-        // });
         gsap.to(".left h2", {
             color: "white"
         });
@@ -150,9 +136,12 @@ export default function Navbar() {
                                 </li>
                                 <IoIosArrowDown className='main-arrow' />
                             </div>
-                            <li className='servicesDropDown'><NavLink to="/partners">Partners</NavLink></li>
+                            {/* <li className='servicesDropDown'><NavLink to="/partners">Partners</NavLink></li> */}
                             <li className='servicesDropDown'><NavLink to="/contactus">ContactUs</NavLink></li>
                             {/* <li className='servicesDropDown'><NavLink to="/pricing">Pricing</NavLink></li> */}
+                            <div className='notificationIcon'>
+                            <MdNotificationAdd id='notificationIcon' />
+                            </div>
                         </ul>
                         <Link to={SIGN_IN.signPath}>
                             <button className="button">

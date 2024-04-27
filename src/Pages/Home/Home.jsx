@@ -2,8 +2,6 @@ import React from 'react'
 import pg3 from '../../assets/Home/pg3.png'
 import pg4 from '../../assets/Home/pg4.png'
 import pg9 from '../../assets/Home/pg9.png'
-import man from '../../assets/Home/man.png'
-import videoXL from '../../assets/Home/videoXL.mp4'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';

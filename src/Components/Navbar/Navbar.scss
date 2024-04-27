@@ -37,8 +37,8 @@ nav {
 
         .right {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             gap: 3rem;
 
             ul {
@@ -67,7 +67,6 @@ nav {
                             color: #904bff;
                             transform: rotate(180deg);
                         }
-
                     }
 
                 }
@@ -95,6 +94,26 @@ nav {
                     .active {
                         color: #904bff;
                     }
+                }
+
+                .notificationIcon {
+                    #notificationIcon {
+                        position: unset;
+                        color: #fff;
+                        font-size: 1.4rem;
+                        cursor: pointer;
+
+                    }
+                    #notificationIcon:hover{
+                        color: #caadf8;
+                        transform: unset;
+                    }
+                    &:hover {
+                        svg {
+                            transform: rotate(0deg);
+                        }
+                    }
+
                 }
 
                 .servicesDropDown {

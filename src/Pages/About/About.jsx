@@ -46,16 +46,16 @@ export default function About() {
         <div className="numberCounter">
           <div className="main">
             <div className="first">
-              <p id='num'>50+</p>
-              <p>SATISFIED CUSTOMERS</p>
+              <p id='num'>300+</p>
+              <p>Happy Clients</p>
             </div>
             <div className="second">
-              <p id='num'>500+</p>
-              <p>PROPOSED SOLUTIONS</p>
+              <p id='num'>30+</p>
+              <p>Skilled Professional</p>
             </div>
             <div className="third">
-              <p id='num'>80%</p>
-              <p>CLIENT RETENTION RATE</p>
+              <p id='num'>290+</p>
+              <p>Project Completed</p>
             </div>
             <div className="fourth">
               <p id='num'>95%</p>
