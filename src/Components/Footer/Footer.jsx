@@ -40,7 +40,7 @@ export default function Footer() {
                             <Link to="https://whatsapp.com/channel/0029Va7ENGAFcow2jWwEpg2B"><FaWhatsapp /></Link>
                             <Link to="https://www.youtube.com/ez.brandbuilders"><FiYoutube /></Link>
                         </div>
-                        <NavLink>ezbrandbuilders@gmail.com</NavLink>
+                        <NavLink>info@ezbrandbuilders.com</NavLink>
                     </div>
                     <div className="third">
                         <h1>Documents</h1>
