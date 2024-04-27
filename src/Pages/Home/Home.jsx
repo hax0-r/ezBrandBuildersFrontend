@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import pg3 from '../../assets/Home/pg3.png'
 import pg4 from '../../assets/Home/pg4.png'
 import pg9 from '../../assets/Home/pg9.png'
@@ -13,15 +13,31 @@ import PricingSection from '../../Components/PricingSection/PricingSection'
 import gsap from "gsap";
 import Model3D from '../../Components/Model3D/Model3D'
 import ScrollProgress from '../../Components/ScrollProgress';
+import Loader from '../../Components/Loader/Loader';
 
 
 
 export default function Home() {
 
+  const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    const hasVisited = sessionStorage.getItem('hasVisited');
+    if (!hasVisited) {
+      setIsLoading(true);
+      sessionStorage.setItem('hasVisited', 'true');
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    }
+  }, []);
+  
   return (
     <>
-    <ScrollProgress/>
+      {
+        isLoading && <Loader />
+      }
+      <ScrollProgress />
       <div className="home">
         <div className="page1">
           <div className="mainContainer">
