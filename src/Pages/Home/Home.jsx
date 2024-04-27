@@ -105,12 +105,12 @@ export default function Home() {
               </div>
               <div className="cardDiv">
                 <div className="card">
-                  <h1>3000+</h1>
+                  <h1>300+</h1>
                   <p>Happy Client</p>
                 </div>
                 <div className="twoCard">
                   <div className="card">
-                    <h1>21.7 K</h1>
+                    <h1>290+</h1>
                     <p>Project <br />Completetd</p>
                   </div>
                   <div className="card">
