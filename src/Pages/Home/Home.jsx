@@ -19,19 +19,29 @@ import Loader from '../../Components/Loader/Loader';
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // Initially set loading to true
 
   useEffect(() => {
     const hasVisited = sessionStorage.getItem('hasVisited');
     if (!hasVisited) {
-      setIsLoading(true);
-      sessionStorage.setItem('hasVisited', 'true');
       setTimeout(() => {
-        setIsLoading(false);
+        setIsLoading(false); // Remove loader after 3 seconds
+        sessionStorage.setItem('hasVisited', 'true');
       }, 3000);
+    } else {
+      setIsLoading(false); // Remove loader immediately if user has already visited
     }
   }, []);
-  
+
+  // State to track whether the 3D model has been loaded
+  const [modelLoaded, setModelLoaded] = useState(false);
+
+  // Function to handle the loading event of the 3D model
+  const handleModelLoad = () => {
+    setModelLoaded(true);
+  };
+
+
   return (
     <>
       {
@@ -48,7 +58,7 @@ export default function Home() {
                 <Button button="Register now" />
               </div>
             </div>
-            <Model3D />
+             <Model3D onLoad={handleModelLoad} />
           </div>
           <div className="overlayBottom"></div>
         </div>
