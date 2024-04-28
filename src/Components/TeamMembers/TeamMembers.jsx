@@ -41,7 +41,7 @@ const TeamMembers = () => {
                     <SwiperSlide className='swiper-slide-team-member'>
                         <div className='dataTeamMember'>
                         <img src="/TeamMembers/aliFather.png" alt="" />
-                        <h1>Muhammad Falak</h1>
+                        <h1>Falak Sher</h1>
                         <p>CFO at EZ Brand Builders</p>
                         </div>
                     </SwiperSlide>                   
