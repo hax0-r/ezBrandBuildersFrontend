@@ -8,3 +8,10 @@
     font-family: NekstMedium;
     color: #FFFFFF;
 }
+
+.word2,.word3{
+    font-family: NekstMedium;
+    background: linear-gradient(251.46deg, #FFFFFF 13.67%, #5F29B7 124.09%);
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -20,27 +20,34 @@ import TextAnimation from '../../Components/TextAnimation/TextAnimation';
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 3000)
+    // setIsLoading(true)
+    // setTimeout(() => {
+    //   setIsLoading(false)
+    // }, 3000)
   }, [])
 
   return (
     <>
-      {
+      {/* {
         isLoading && <Loader />
-      }
+      } */}
       <ScrollProgress />
       <div className="home">
         <div className="page1">
           <div className="mainContainer">
             <div className="content">
               <div>
-                <h1 className='gsap_p1_head'><TextAnimation/>  <span>& Solving IT Challenges</span> </h1>
+                <h1 className='gsap_p1_head'>
+                  <TextAnimation
+                    firstLine="Brand Builders"
+                    secondLine="Solve IT"
+                    thirdLine="Challenges"
+                  />
+                  {/* <span>& Solving IT Challenges</span> */}
+                </h1>
                 <p>At EZ Brand Builders, we provide top-tier IT services which your business needs. With expertise in Web Development, Digital Marketing, Cyber Security, Cloud Services, Software Development, Technology Trainig.Our expert team ensures efficiency and security for your operations.</p>
                 <Button button="Register now" />
               </div>

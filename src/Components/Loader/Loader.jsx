@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import "./Loader.css"
+import { gsap } from 'gsap';
 
 const Loader = () => {
 
-  const [isLoading, setIsLoading] = useState();
 
   useEffect(() => {
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 3000)
+
+    gsap.to(".LoaderDiv",{
+      delay:3,
+      duration:.5,
+      height:0,
+    })
+    
   }, [])
 
   return (
     <>
-      {
-        isLoading && <Loader />
-      }
       <div className="LoaderDiv">
         <span className="loader"></span>
       </div>

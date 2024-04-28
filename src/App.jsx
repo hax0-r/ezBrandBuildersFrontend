@@ -11,19 +11,9 @@ import Loader from './Components/Loader/Loader'
 import { useEffect, useState } from 'react'
 
 function App() {
-  const [isLoading, setIsLoading] = useState();
-
-  useEffect(() => {
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 3000)
-  }, [])
   return (
     <>
-      {
-        isLoading && <Loader />
-      }
+    <Loader/>
       <Navbar />
       <Router />
       <ToastContainer
