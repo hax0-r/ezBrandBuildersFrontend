@@ -46,7 +46,7 @@ const PricingSection = () => {
                             </div>
                             <div className="second">
                                 <h1>{currency === "USD" ? `$${prices.USD.professional}` : `${prices.PKR.professional}`} <span> /month</span> </h1>
-                                <h3>Professional</h3>
+                                <h3>Advance</h3>
                                 <p>Advanced tools to take your work to the next level.</p>
                                 <li> <FaCheck /> 5 Social Network</li>
                                 <li> <FaCheck /> 30 Posts per Month</li>

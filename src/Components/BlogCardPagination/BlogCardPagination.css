@@ -1,0 +1,100 @@
+.blogCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 1rem;
+    margin: auto;
+    max-width: 75rem;
+    width: 100%;
+
+    .blogMain {
+        border: 2px solid rgba(255, 255, 255, 0.148);
+        border-radius: 1rem;
+        width: 23rem;
+        min-height: 440px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: 200ms all;
+
+        &:hover {
+            border: 2px solid rgba(255, 255, 255, 0.689);
+            img{
+                filter: brightness(1);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 13rem;
+            object-fit: cover;
+            filter: brightness(.8);
+        }
+
+        h1 {
+            font-family: NekstRegular;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: -4%;
+            text-align: left;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        p {
+            color: rgb(233, 227, 244);
+            font-family: NekstRegular;
+            font-size: 1rem;
+            font-weight: 400;
+            opacity: 0.8;
+            line-height: 135%;
+            text-align: left;
+            padding: 0 1rem;
+            letter-spacing: -4%;
+        }
+
+
+        .blogCardProfile {
+            display: flex;
+            padding: 2.5rem 1rem 1rem 1rem;
+            align-items: center;
+
+            img {
+                height: 3rem;
+                width: 3rem;
+                background-color: #5f29b7;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid #ffffffbb;
+            }
+
+            .blogCardProfileContent {
+                display: flex;
+                flex-direction: column;
+                padding-left: .2rem;
+                color: #fff;
+
+                h2 {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .blogBtn {
+        display: flex;
+        justify-content: end;
+        width: 95%;
+        gap: 1rem;
+        padding-bottom: 1rem;
+
+        button {
+            border: 2px solid #ffffff8c;
+            border-radius: 7px;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: .5rem .8rem;
+
+        }
+    }
+}

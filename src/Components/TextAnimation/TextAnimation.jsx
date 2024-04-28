@@ -10,23 +10,23 @@ const TextAnimation = ({ firstLine, secondLine, thirdLine }) => {
         if (!animationInitialized) {
             gsap.from(".word", {
                 y: 100,
-                delay: 3.2,
+                delay: 3.3,
                 stagger: {
-                    // each: 0.01
+                    each: 0.01
                 }
             });
             gsap.from(".word2", {
                 y: 100,
-                delay: 3.2,
+                delay: 3.3,
                 stagger: {
-                    // each: 0.01
+                    each: 0.01
                 }
             });
             gsap.from(".word3", {
                 y: 100,
-                delay: 3.2,
+                delay: 3.3,
                 stagger: {
-                    // each: 0.01
+                    each: 0.01
                 }
             });
             sessionStorage.setItem('animationInitialized', true);

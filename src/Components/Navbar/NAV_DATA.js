@@ -15,6 +15,10 @@ const NAV_DATA = [
         navTitle: "Contact Us",
         navPath: "/contactUs"
     },
+    {
+        navTitle: "Blog",
+        navPath: "/blog"
+    },
     // {
     //     navTitle: "Pricing",
     //     navPath: "/pricing"

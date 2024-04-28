@@ -17,6 +17,7 @@ import SoftwareDevelopment from '../Pages/Services/SoftwareDevelopment'
 import TechnologyTaning from '../Pages/Services/TechnologyTaning'
 import Seo from '../Pages/Services/Seo'
 import GraphicDesigning from '../Pages/Services/GraphicDesigning'
+import Blog from '../Pages/Blog/Blog'
 
 export default function Router() {
     return (
@@ -26,6 +27,7 @@ export default function Router() {
                 <Route path={NAV_DATA[1].navPath} element={<About />} />
                 <Route path={NAV_DATA[2].navPath} element={<Partners />} />
                 <Route path={NAV_DATA[3].navPath} element={<ContactUs />} />
+                <Route path={NAV_DATA[4].navPath} element={<Blog />} />
                 {/* <Route path={NAV_DATA[4].navPath} element={<Pricing />} /> */}
                 <Route path="/services" element={<Services />} />
                 <Route path="/web-development" element={<WebDevelopment />} />
