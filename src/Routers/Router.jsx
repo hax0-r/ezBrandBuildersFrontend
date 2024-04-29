@@ -18,6 +18,7 @@ import TechnologyTaning from '../Pages/Services/TechnologyTaning'
 import Seo from '../Pages/Services/Seo'
 import GraphicDesigning from '../Pages/Services/GraphicDesigning'
 import Blog from '../Pages/Blog/Blog'
+import ServicesCardPages from '../Pages/Services/ServicesCardPages/ServicesCardPages'
 
 export default function Router() {
     return (
@@ -30,14 +31,17 @@ export default function Router() {
                 <Route path={NAV_DATA[4].navPath} element={<Blog />} />
                 {/* <Route path={NAV_DATA[4].navPath} element={<Pricing />} /> */}
                 <Route path="/services" element={<Services />} />
-                <Route path="/web-development" element={<WebDevelopment />} />
-                <Route path="/digital-marketing" element={<DigitalMarketing />} />
-                <Route path="/cyber-security" element={<CyberSecurity />} />
-                <Route path="/cloud-services" element={<CloudeServices />} />
-                <Route path="/software-development" element={<SoftwareDevelopment />} />
-                <Route path="/technology-training" element={<TechnologyTaning />} />
-                <Route path="/graphic-designing" element={<GraphicDesigning />} />
-                <Route path="/seo" element={<Seo />} />
+                <Route path='/services'>
+                    <Route path="web-development" element={<WebDevelopment />} />
+                    <Route path="digital-marketing" element={<DigitalMarketing />} />
+                    <Route path="cyber-security" element={<CyberSecurity />} />
+                    <Route path="cloud-services" element={<CloudeServices />} />
+                    <Route path="software-development" element={<SoftwareDevelopment />} />
+                    <Route path="technology-training" element={<TechnologyTaning />} />
+                    <Route path="graphic-designing" element={<GraphicDesigning />} />
+                    <Route path="seo" element={<Seo />} />
+                </Route>
+                    <Route path="/ServicesCardPages" element={<ServicesCardPages />} />
                 <Route path='/signin' element={<SignIn />} />
                 <Route path='*' element={<Error />} />
             </Routes>

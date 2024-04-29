@@ -52,7 +52,7 @@ export default function Navbar() {
                                 <li className='servicesDropDown'><NavLink to="/services">Service</NavLink>
                                     <ul>
                                         <div className='sub-dropdown'>
-                                            <Link to="/web-development">Web Development <IoCaretForward /></Link>
+                                            <Link to="/services/web-development">Web Development <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     WEB_DEVELOPMENT.map(({ title, path }, index) => (
@@ -62,7 +62,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/digital-marketing">Digial Marketing<IoCaretForward /></Link>
+                                            <Link to="/services/digital-marketing">Digial Marketing<IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     DIGITAL_MARKETING.map(({ title, path }, index) => (
@@ -72,7 +72,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/seo">SEO <IoCaretForward /></Link>
+                                            <Link to="/services/seo">SEO <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     SEO.map(({ title, path }, index) => (
@@ -82,7 +82,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/graphic-designing">Graphic Designing <IoCaretForward /></Link>
+                                            <Link to="/services/graphic-designing">Graphic Designing <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     graphic_designing.map(({ title, path }, index) => (
@@ -92,7 +92,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/cyber-security">Cyber Security <IoCaretForward /></Link>
+                                            <Link to="/services/cyber-security">Cyber Security <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     CYBER_SECURITY.map(({ title, path }, index) => (
@@ -102,7 +102,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/cloud-services">Cloud Services  <IoCaretForward /></Link>
+                                            <Link to="/services/cloud-services">Cloud Services  <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     CLOUD_SERVICES.map(({ title, path }, index) => (
@@ -112,7 +112,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/software-development">Software Development <span>...</span> <IoCaretForward /></Link>
+                                            <Link to="/services/software-development">Software Development <span>...</span> <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     SOFTWARE_DEVELOPMENT.map(({ title, path }, index) => (
@@ -122,7 +122,7 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/technology-training">Technology Training <span>...</span> <IoCaretForward /></Link>
+                                            <Link to="/services/technology-training">Technology Training <span>...</span> <IoCaretForward /></Link>
                                             <div className="sub-div">
                                                 {
                                                     TECHNOLOGY.map(({ title, path }, index) => (

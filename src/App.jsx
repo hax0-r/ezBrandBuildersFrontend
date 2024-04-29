@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from './Components/Toastify/Toastify'
 import Loader from './Components/Loader/Loader'
 import { useEffect, useState } from 'react'
+import ServicesCardPages from './Pages/Services/ServicesCardPages/ServicesCardPages'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         theme="dark"
       />
       <Footer />
+      <ServicesCardPages/>
     </>
   )
 }
