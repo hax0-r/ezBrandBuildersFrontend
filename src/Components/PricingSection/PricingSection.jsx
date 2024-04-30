@@ -50,11 +50,10 @@ const PricingSection = () => {
                                 <p>Advanced tools to take your work to the next level.</p>
                                 <li> <FaCheck /> 5 Social Network</li>
                                 <li> <FaCheck /> 30 Posts per Month</li>
-                                <li> <FaCheck /> Pro Content Research </li>
+                                <li> <FaCheck /> Advance Content Research </li>
                                 <li> <FaCheck /> Platfrom Maintainance</li>
                                 <li> <FaCheck /> Weekly Report</li>
                                 <li> <FaCheck /> 24/7 Support</li>
-                                <li>     .</li>
                                 <li>     .</li>
                                 <SimpleButton button="Select" />
                             </div>

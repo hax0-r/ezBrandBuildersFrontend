@@ -34,13 +34,13 @@ export default function Footer() {
                     <div className="second">
                         <p>We are in social networks</p>
                         <div className="links">
-                            <Link to="https://www.facebook.com/ez.brandbuilders"><RiFacebookCircleLine /></Link>
-                            <Link to="https://www.instagram.com/ez.brandbuilders/"><FaInstagram /></Link>
-                            <Link to="https://www.linkedin.com/company/ez-brand-builders/"><AiOutlineLinkedin /></Link>
-                            <Link to="https://whatsapp.com/channel/0029Va7ENGAFcow2jWwEpg2B"><FaWhatsapp /></Link>
-                            <Link to="https://www.youtube.com/ez.brandbuilders"><FiYoutube /></Link>
+                            <Link to="https://www.facebook.com/ez.brandbuilders" target='_blank' ><RiFacebookCircleLine /></Link>
+                            <Link to="https://www.instagram.com/ez.brandbuilders/ " target='_blank'><FaInstagram /></Link>
+                            <Link to="https://www.linkedin.com/company/ez-brand-builders/ " target='_blank'><AiOutlineLinkedin /></Link>
+                            <Link to="https://whatsapp.com/channel/0029Va7ENGAFcow2jWwEpg2B" target='_blank'><FaWhatsapp /></Link>
+                            <Link to="https://www.youtube.com/ez.brandbuilders" target='_blank'><FiYoutube /></Link>
                         </div>
-                        <NavLink>info@ezbrandbuilders.com</NavLink>
+                        <NavLink to="mailto:info@ezbrandbuilders.com ">info@ezbrandbuilders.com</NavLink>
                     </div>
                     <div className="third">
                         <h1>Documents</h1>

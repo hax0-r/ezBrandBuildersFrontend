@@ -165,10 +165,14 @@ nav {
                                 z-index: -1;
                                 opacity: 0;
                                 visibility: hidden;
-
+                                
                                 a {
+                                    padding-right: 1rem;
                                     color: #fff;
                                     transition: 200ms all;
+                                    width: 18rem;
+                                    overflow: hidden;
+
 
                                     &:hover {
                                         color: #904bff;
@@ -181,7 +185,7 @@ nav {
                                 .sub-div {
                                     opacity: 1;
                                     visibility: visible;
-                                    right: -14.8rem;
+                                    right: -18.06rem;
                                 }
                             }
                         }

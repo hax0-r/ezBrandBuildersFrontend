@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { IoCaretForward, IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
-import { CLOUD_SERVICES, CYBER_SECURITY, DIGITAL_MARKETING, NAV_DATA, SEO, SIGN_IN, SOFTWARE_DEVELOPMENT, TECHNOLOGY, WEB_DEVELOPMENT, graphic_designing } from './NAV_DATA';
+import { CLOUD_SERVICES, CYBER_SECURITY, DIGITAL_MARKETING, NAV_DATA, SEO , SOFTWARE_DEVELOPMENT, TECHNOLOGY, TalkToUs, WEB_DEVELOPMENT, graphic_designing } from './NAV_DATA';
 import { IoIosArrowDown } from "react-icons/io";
 import gsap from "gsap";
 import Logo from '../Logo';
@@ -49,7 +49,7 @@ export default function Navbar() {
                             <li className='servicesDropDown'><NavLink to="/">Home</NavLink></li>
                             <li className='servicesDropDown'><NavLink to="/about">About Us</NavLink></li>
                             <div>
-                                <li className='servicesDropDown'><NavLink to="/services">Service</NavLink>
+                                <li className='servicesDropDown'><NavLink to="/services">Services</NavLink>
                                     <ul>
                                         <div className='sub-dropdown'>
                                             <Link to="/services/web-development">Web Development <IoCaretForward /></Link>
@@ -144,9 +144,9 @@ export default function Navbar() {
                                 <MdNotificationAdd id='notificationIcon' />
                             </div>
                         </ul>
-                        <Link to={SIGN_IN.signPath}>
+                        <Link to={TalkToUs.path} target='_blank' >
                             <button className="button">
-                                <span>{SIGN_IN.signTitle}   <i> .</i>
+                                <span>{TalkToUs.title}   <i> .</i>
                                     <svg width="25" height="10" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <   path d="M1 5L23.3333 5M23.3333 5L18.3333 0.999999M23.3333 5L19.3333 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
@@ -199,7 +199,7 @@ export default function Navbar() {
                             }}
                             to='/signin'>
                             <button >
-                                {SIGN_IN.signTitle}
+                                {TalkToUs.title}
                             </button>
                         </Link>
                     </div>

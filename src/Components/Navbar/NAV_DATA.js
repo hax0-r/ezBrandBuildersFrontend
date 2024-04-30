@@ -26,9 +26,9 @@ const NAV_DATA = [
     //     navPath: "/pricing"
     // },
 ]
-const SIGN_IN = {
-    signTitle: "Talk To Us",
-    signPath: "/signin"
+const TalkToUs = {
+    title: "Talk To Us",
+    path: "https:/Wa.me/+923201091220"
 }
 
 let servicesLinks = "/services/ServicesCardPages/"
@@ -58,100 +58,34 @@ const CYBER_SECURITY = ServicesData.filter(service => service.category === "Cybe
         path: `${servicesLinks}${title}`
     }));
 
-// const CYBER_SECURITY = [
-//     {
-//         title: "cloud security",
-//         path: `${servicesLinks}cloud security`
-//     },
-//     {
-//         title: "IOT Security",
-//         path: `${servicesLinks}IoT Security`
-//     },
-//     {
-//         title: "Firewall",
-//         path: `${servicesLinks}Firewall`
-//     },
-//     {
-//         title: "Software Testing",
-//         path: `${servicesLinks}Software Testing`
-//     },
-//     {
-//         title: "Application Security",
-//         path: `${servicesLinks}Application Security`
-//     },
-// ]
+const CLOUD_SERVICES = ServicesData.filter(service => service.category === "Cloud Services")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
 
-const CLOUD_SERVICES = [
-    {
-        title: "Domain & Web Hosting",
-        path: `${servicesLinks}Domain & Web Hosting`
-    },
-    {
-        title: "SaaS",
-        path: `${servicesLinks}SaaS`
-    },
-    {
-        title: "Storage",
-        path: `${servicesLinks}Storage`
-    },
-]
+const SOFTWARE_DEVELOPMENT = ServicesData.filter(service => service.category === "Software Development")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
 
-const SOFTWARE_DEVELOPMENT = [
-    {
-        title: "Artificial Intellegence",
-        path: `${servicesLinks}Artificial Intellegence`
-    },
-    {
-        title: "Web Application Deve...",
-        path: `${servicesLinks}web application development`
-    },
-    {
-        title: "Mobile Application De...",
-        path: `${servicesLinks}mobile application development`
-    },
-    {
-        title: "Custom Software Dev...",
-        path: `${servicesLinks}custom software development`
-    },
-    {
-        title: "DevOps",
-        path: `${servicesLinks}DevOps`
-    },
-]
+const TECHNOLOGY = ServicesData.filter(service => service.category === "Technology Training")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
+    
+const SEO = ServicesData.filter(service => service.category === "seo")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
 
-const TECHNOLOGY = [
-    {
-        title: "Technology Developm...",
-        path: `${servicesLinks}Customize`
-    },
-]
-
-const SEO = [
-    {
-        title: "Local SEO                          ",
-        path: `${servicesLinks}Local SEO`
-    },
-    {
-        title: "Link Building",
-        path: `${servicesLinks}Link Building`
-    },
-    {
-        title: "On Page SEO ",
-        path: `${servicesLinks}On Page SEO`
-    },
-    {
-        title: "Keyword Research",
-        path: `${servicesLinks}Keyword Research`
-    },
-    {
-        title: "Teachnical SEO",
-        path: `${servicesLinks}Technical SEO`
-    },
-]
 
 export {
     NAV_DATA,
-    SIGN_IN,
+    TalkToUs,
     WEB_DEVELOPMENT,
     DIGITAL_MARKETING,
     CYBER_SECURITY,
