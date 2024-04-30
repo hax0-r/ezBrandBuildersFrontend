@@ -19,9 +19,10 @@
 }
 
 .signIn {
-    background: url(../../assets/SignIn/signIn.png) center;
+    background: url(../../assets/Home/page2Bg.png) center;
     background-size: cover;
     display: flex;
+    background-attachment: fixed;
     justify-content: center;
     background-color: #000000;
     align-items: center;

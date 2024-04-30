@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from '../Pages/Home/Home'
 import About from '../Pages/About/About'
 import ContactUs from '../Pages/ContactUs/ContactUs'
@@ -19,32 +19,36 @@ import Seo from '../Pages/Services/Seo'
 import GraphicDesigning from '../Pages/Services/GraphicDesigning'
 import Blog from '../Pages/Blog/Blog'
 import ServicesCardPages from '../Pages/Services/ServicesCardPages/ServicesCardPages'
+import { AnimatePresence } from 'framer-motion'
 
 export default function Router() {
+    const location = useLocation()
     return (
         <>
-            <Routes>
-                <Route path={NAV_DATA[0].navPath} element={<Home />} />
-                <Route path={NAV_DATA[1].navPath} element={<About />} />
-                {/* <Route path={NAV_DATA[2].navPath} element={<Partners />} /> */}
-                <Route path={NAV_DATA[2].navPath} element={<ContactUs />} />
-                <Route path={NAV_DATA[3].navPath} element={<Blog />} />
-                {/* <Route path={NAV_DATA[4].navPath} element={<Pricing />} /> */}
-                <Route path="/services" element={<Services />} />
-                <Route path='/services'>
-                    <Route path="web-development" element={<WebDevelopment />} />
-                    <Route path="digital-marketing" element={<DigitalMarketing />} />
-                    <Route path="cyber-security" element={<CyberSecurity />} />
-                    <Route path="cloud-services" element={<CloudeServices />} />
-                    <Route path="software-development" element={<SoftwareDevelopment />} />
-                    <Route path="technology-training" element={<TechnologyTaning />} />
-                    <Route path="graphic-designing" element={<GraphicDesigning />} />
-                    <Route path="seo" element={<Seo />} />
-                    <Route path="ServicesCardPages/:id" element={<ServicesCardPages />} />
-                </Route>
-                <Route path='/signin' element={<SignIn />} />
-                <Route path='*' element={<Error />} />
-            </Routes>
+            <AnimatePresence mode='wait'>
+                <Routes location={location} key={location.pathname}>
+                    <Route path={NAV_DATA[0].navPath} element={<Home />} />
+                    <Route path={NAV_DATA[1].navPath} element={<About />} />
+                    {/* <Route path={NAV_DATA[2].navPath} element={<Partners />} /> */}
+                    <Route path={NAV_DATA[2].navPath} element={<ContactUs />} />
+                    <Route path={NAV_DATA[3].navPath} element={<Blog />} />
+                    {/* <Route path={NAV_DATA[4].navPath} element={<Pricing />} /> */}
+                    <Route path="/services" element={<Services />} />
+                    <Route path='/services'>
+                        <Route path="web-development" element={<WebDevelopment />} />
+                        <Route path="digital-marketing" element={<DigitalMarketing />} />
+                        <Route path="cyber-security" element={<CyberSecurity />} />
+                        <Route path="cloud-services" element={<CloudeServices />} />
+                        <Route path="software-development" element={<SoftwareDevelopment />} />
+                        <Route path="technology-training" element={<TechnologyTaning />} />
+                        <Route path="graphic-designing" element={<GraphicDesigning />} />
+                        <Route path="seo" element={<Seo />} />
+                        <Route path="ServicesCardPages/:id" element={<ServicesCardPages />} />
+                    </Route>
+                    <Route path='/signin' element={<SignIn />} />
+                    <Route path='*' element={<Error />} />
+                </Routes>
+            </AnimatePresence>
         </>
     )
 }
