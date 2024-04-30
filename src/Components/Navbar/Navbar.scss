@@ -93,6 +93,20 @@ nav {
 
                     .active {
                         color: #904bff;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .active::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -.4rem;
+                        width: .7rem;
+                        border-radius: 50%;
+                        height: .7rem;
+                        background-color: #904bff;
                     }
                 }
 
@@ -104,10 +118,12 @@ nav {
                         cursor: pointer;
 
                     }
-                    #notificationIcon:hover{
+
+                    #notificationIcon:hover {
                         color: #caadf8;
                         transform: unset;
                     }
+
                     &:hover {
                         svg {
                             transform: rotate(0deg);

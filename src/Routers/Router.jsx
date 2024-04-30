@@ -26,9 +26,9 @@ export default function Router() {
             <Routes>
                 <Route path={NAV_DATA[0].navPath} element={<Home />} />
                 <Route path={NAV_DATA[1].navPath} element={<About />} />
-                <Route path={NAV_DATA[2].navPath} element={<Partners />} />
-                <Route path={NAV_DATA[3].navPath} element={<ContactUs />} />
-                <Route path={NAV_DATA[4].navPath} element={<Blog />} />
+                {/* <Route path={NAV_DATA[2].navPath} element={<Partners />} /> */}
+                <Route path={NAV_DATA[2].navPath} element={<ContactUs />} />
+                <Route path={NAV_DATA[3].navPath} element={<Blog />} />
                 {/* <Route path={NAV_DATA[4].navPath} element={<Pricing />} /> */}
                 <Route path="/services" element={<Services />} />
                 <Route path='/services'>
@@ -40,8 +40,8 @@ export default function Router() {
                     <Route path="technology-training" element={<TechnologyTaning />} />
                     <Route path="graphic-designing" element={<GraphicDesigning />} />
                     <Route path="seo" element={<Seo />} />
+                    <Route path="ServicesCardPages/:id" element={<ServicesCardPages />} />
                 </Route>
-                    <Route path="/ServicesCardPages" element={<ServicesCardPages />} />
                 <Route path='/signin' element={<SignIn />} />
                 <Route path='*' element={<Error />} />
             </Routes>

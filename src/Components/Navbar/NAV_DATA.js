@@ -1,3 +1,5 @@
+import { ServicesData } from "../../Data/ServicesData"
+
 const NAV_DATA = [
     {
         navTitle: "Home",
@@ -7,10 +9,10 @@ const NAV_DATA = [
         navTitle: "About",
         navPath: "/about"
     },
-    {
-        navTitle: "Partners",
-        navPath: "/partners"
-    },
+    // {
+    //     navTitle: "Partners",
+    //     navPath: "/partners"
+    // },
     {
         navTitle: "Contact Us",
         navPath: "/contactUs"
@@ -29,171 +31,121 @@ const SIGN_IN = {
     signPath: "/signin"
 }
 
-const WEB_DEVELOPMENT = [
-    {
-        title: "E-Commerce",
-        path: "/e-commerce"
-    },
-    {
-        title: "Web Desgin",
-        path: "/web-desgin"
-    },
-    {
-        title: "Web Application",
-        path: "/web-application"
-    },
-    {
-        title: "API Integration",
-        path: "/api-integration"
-    },
-    {
-        title: "Data Base Desgin",
-        path: "/data-base-desgin"
-    },
-    {
-        title: "Full Stack Development",
-        path: "/full-stack-development"
-    },
-]
+let servicesLinks = "/services/ServicesCardPages/"
 
-const DIGITAL_MARKETING = [
-    {
-        title: "Social Media Marketing",
-        path: "/social-media-marketing"
-    },
-    {
-        title: "Social Media Advertis..",
-        path: "/social-media-advertisment"
-    },
-    {
-        title: "Content Marketing",
-        path: "/content-marketing"
-    },
-    {
-        title: "Google Ads PPC",
-        path: "/google-ads-ppc"
-    },
-    {
-        title: "Research",
-        path: "/research"
-    },
-    {
-        title: "SEM",
-        path: "/sem"
-    },
-]
 
-const graphic_designing = [
-    {
-        title: "Logo Design",
-        path: "/logo-design"
-    },
-    {
-        title: "Illustrations                       ",
-        path: "/illustrations"
-    },
-    {
-        title: "3D Models",
-        path: "/models-3d"
-    },
-    {
-        title: "2D/3D Designs",
-        path: "/designs-2d-3d"
-    },
-    {
-        title: "Social Media Posts",
-        path: "/social-media-posts"
-    },
-]
+const WEB_DEVELOPMENT = ServicesData.filter(service => service.category === "Web Development")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
 
-const CYBER_SECURITY = [
-    {
-        title: "cloud security",
-        path: "/cloud-security"
-    },
-    {
-        title: "IOT Security",
-        path: "/iot-security"
-    },
-    {
-        title: "Firewall",
-        path: "/firewall"
-    },
-    {
-        title: "Software Testing",
-        path: "/software-testing"
-    },
-    {
-        title: "Application Security",
-        path: "/application-security"
-    },
-]
+const DIGITAL_MARKETING = ServicesData.filter(service => service.category === "Digital Marketing")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
+
+const graphic_designing = ServicesData.filter(service => service.category === "graphic designing")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
+
+const CYBER_SECURITY = ServicesData.filter(service => service.category === "CyberSecurity")
+    .map(({ title }) => ({
+        title: title,
+        path: `${servicesLinks}${title}`
+    }));
+
+// const CYBER_SECURITY = [
+//     {
+//         title: "cloud security",
+//         path: `${servicesLinks}cloud security`
+//     },
+//     {
+//         title: "IOT Security",
+//         path: `${servicesLinks}IoT Security`
+//     },
+//     {
+//         title: "Firewall",
+//         path: `${servicesLinks}Firewall`
+//     },
+//     {
+//         title: "Software Testing",
+//         path: `${servicesLinks}Software Testing`
+//     },
+//     {
+//         title: "Application Security",
+//         path: `${servicesLinks}Application Security`
+//     },
+// ]
 
 const CLOUD_SERVICES = [
     {
         title: "Domain & Web Hosting",
-        path: "/domain-web-hosting"
+        path: `${servicesLinks}Domain & Web Hosting`
     },
     {
         title: "SaaS",
-        path: "/saas"
+        path: `${servicesLinks}SaaS`
     },
     {
         title: "Storage",
-        path: "/storage"
+        path: `${servicesLinks}Storage`
     },
 ]
 
 const SOFTWARE_DEVELOPMENT = [
     {
         title: "Artificial Intellegence",
-        path: "/artificial-intellegence"
+        path: `${servicesLinks}Artificial Intellegence`
     },
     {
         title: "Web Application Deve...",
-        path: "/web-application-development"
+        path: `${servicesLinks}web application development`
     },
     {
         title: "Mobile Application De...",
-        path: "/mobile-application-development"
+        path: `${servicesLinks}mobile application development`
     },
     {
         title: "Custom Software Dev...",
-        path: "/custom-software-development"
+        path: `${servicesLinks}custom software development`
     },
     {
         title: "DevOps",
-        path: "/devops"
+        path: `${servicesLinks}DevOps`
     },
 ]
 
 const TECHNOLOGY = [
     {
         title: "Technology Developm...",
-        path: "/technology"
+        path: `${servicesLinks}Customize`
     },
 ]
 
 const SEO = [
     {
         title: "Local SEO                          ",
-        path: "/local "
+        path: `${servicesLinks}Local SEO`
     },
     {
         title: "Link Building",
-        path: "/link-building"
+        path: `${servicesLinks}Link Building`
     },
     {
         title: "On Page SEO ",
-        path: "/on-page-seo"
+        path: `${servicesLinks}On Page SEO`
     },
     {
         title: "Keyword Research",
-        path: "/keyword-research"
+        path: `${servicesLinks}Keyword Research`
     },
     {
         title: "Teachnical SEO",
-        path: "/teachnical-seo"
+        path: `${servicesLinks}Technical SEO`
     },
 ]
 
@@ -208,4 +160,5 @@ export {
     TECHNOLOGY,
     SEO,
     graphic_designing,
-} 
+}
+//                       

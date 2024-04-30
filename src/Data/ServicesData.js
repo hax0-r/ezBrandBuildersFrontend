@@ -11,7 +11,7 @@ export const ServicesData = [
     },
     {
         category: "Web Development",
-        title: "UI/UX",
+        title: "UI UX",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
     {
@@ -26,7 +26,7 @@ export const ServicesData = [
     },
     {
         category: "Web Development",
-        title: "full stack development",
+        title: "full stack development ",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 
@@ -98,7 +98,7 @@ export const ServicesData = [
     },
     {
         category: "CyberSecurity",
-        title: "Application Security",
+        title: "Application Security         ",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 
@@ -176,7 +176,7 @@ export const ServicesData = [
 
     {
         category: "Technology Training",
-        title: "title",
+        title: "Customize",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 
@@ -242,7 +242,7 @@ export const ServicesData = [
     },
     {
         category: "graphic designing",
-        title: "2D/3D Designs",
+        title: "2D-3D Designs",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
     {

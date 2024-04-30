@@ -137,7 +137,7 @@ export default function Navbar() {
                                 <IoIosArrowDown className='main-arrow' />
                             </div>
                             {/* <li className='servicesDropDown'><NavLink to="/partners">Partners</NavLink></li> */}
-                            <li className='servicesDropDown'><NavLink to={NAV_DATA[4].navPath}>{NAV_DATA[4].navTitle}</NavLink></li>
+                            <li className='servicesDropDown'><NavLink to={NAV_DATA[3].navPath}>{NAV_DATA[3].navTitle}</NavLink></li>
                             <li className='servicesDropDown'><NavLink to="/contactus">ContactUs</NavLink></li>
                             {/* <li className='servicesDropDown'><NavLink to="/pricing">Pricing</NavLink></li> */}
                             <div className='notificationIcon'>

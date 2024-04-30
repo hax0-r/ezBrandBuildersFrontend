@@ -9,12 +9,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from './Components/Toastify/Toastify'
 import Loader from './Components/Loader/Loader'
 import { useEffect, useState } from 'react'
-import ServicesCardPages from './Pages/Services/ServicesCardPages/ServicesCardPages'
+import WhatsappIcon from './Components/WhatsappIcon'
 
 function App() {
   return (
     <>
-    <Loader/>
+      <Loader />
       <Navbar />
       <Router />
       <ToastContainer
@@ -30,7 +30,7 @@ function App() {
         theme="dark"
       />
       <Footer />
-      <ServicesCardPages/>
+      <WhatsappIcon/>
     </>
   )
 }

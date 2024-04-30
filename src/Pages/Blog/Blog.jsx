@@ -16,7 +16,7 @@ const Blog = () => {
             </div>
             <div className="page2">
                 <div className="main">
-                    <h1>Join to our partners, read author's analytics, explore the world of trading and cryptocurrencies. </h1>
+                    <h1>Stay ahead of the curve with our blog - your source for digital insights and inspiration & delivering unparalleled expertise </h1>
                 </div>
             </div>
             <div className="page3">

@@ -2,10 +2,18 @@ import React, { useState } from 'react'
 import './Services.css'
 import { ServicesData } from '../../Data/ServicesData'
 import { IoSearch } from 'react-icons/io5'
+import { Link, useParams } from 'react-router-dom';
 
 export default function DigitalMarketing() {
 
     const [filteredData, setFilteredData] = useState([]);
+    let { id } = useParams()
+
+    let filteredServicesCard = ServicesData.filter((card, index) => {
+        return card.title === id
+    })
+
+    let [card] = filteredServicesCard
 
     const ServicesSearchHandler = (e) => {
         const value = e.target.value.trim().toLowerCase();
@@ -42,11 +50,15 @@ export default function DigitalMarketing() {
                             <div className="right">
                                 {
                                     filteredData.map(({ title, description, icon }, index) => (
-                                        <div className="card" key={index}>
-                                            <h2>{title}</h2>
-                                            {icon}
-                                            <p>{description}</p>
-                                        </div>
+                                        <>
+                                            <Link to={`/services/ServicesCardPages/${title}`}>
+                                                <div className="card" key={index}>
+                                                    <h2>{title}</h2>
+                                                    {icon}
+                                                    <p>{description}</p>
+                                                </div>
+                                            </Link>
+                                        </>
                                     ))
                                 }
                             </div>

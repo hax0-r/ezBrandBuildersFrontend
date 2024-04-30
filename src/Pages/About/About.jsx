@@ -18,7 +18,7 @@ export default function About() {
         </div>
         <div className="page2">
           <div className="main">
-            <h1>Join to our partners, read author's analytics, explore the world of trading and cryptocurrencies. </h1>
+            <h1>Unleash your brand's digital potential with our expert services in Marketing, Development, and other Services. </h1>
           </div>
         </div>
         <div className="page4">

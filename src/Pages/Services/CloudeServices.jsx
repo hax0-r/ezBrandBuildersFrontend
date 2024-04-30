@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Services.css'
 import { ServicesData } from '../../Data/ServicesData'
 import { IoSearch } from 'react-icons/io5'
+import { Link } from 'react-router-dom';
 
 export default function CloudeServices() {
 
@@ -42,11 +43,13 @@ export default function CloudeServices() {
                             <div className="right">
                                 {
                                     filteredData.map(({ title, description, icon }, index) => (
-                                        <div className="card" key={index}>
-                                            <h2>{title}</h2>
-                                            {icon}
-                                            <p>{description}</p>
-                                        </div>
+                                        <Link to={`/services/ServicesCardPages/${title}`}>
+                                                <div className="card" key={index}>
+                                                    <h2>{title}</h2>
+                                                    {icon}
+                                                    <p>{description}</p>
+                                                </div>
+                                            </Link>
                                     ))
                                 }
                             </div>
