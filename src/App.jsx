@@ -30,7 +30,7 @@ function App() {
         theme="dark"
       />
       <Footer />
-      <WhatsappIcon/>
+      <WhatsappIcon />
     </>
   )
 }

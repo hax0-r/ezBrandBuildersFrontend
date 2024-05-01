@@ -7,6 +7,12 @@
   src: url(../../Demo_Fonts/Fontspring-DEMO-nekst-medium.otf);
 }
 
+@font-face {
+  font-family: 'Nekst';
+  src: url('../../Demo_Fonts/Fontspring-DEMO-nekst-medium.otf') format('woff2'),
+}
+
+
 * {
   margin: 0;
   padding: 0;

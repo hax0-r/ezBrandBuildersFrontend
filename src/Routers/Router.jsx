@@ -20,6 +20,7 @@ import GraphicDesigning from '../Pages/Services/GraphicDesigning'
 import Blog from '../Pages/Blog/Blog'
 import ServicesCardPages from '../Pages/Services/ServicesCardPages/ServicesCardPages'
 import { AnimatePresence } from 'framer-motion'
+import CreateAccount from '../Pages/CreateAccount/CreateAccount'
 
 export default function Router() {
     const location = useLocation()
@@ -32,6 +33,7 @@ export default function Router() {
                     {/* <Route path={NAV_DATA[2].navPath} element={<Partners />} /> */}
                     <Route path={NAV_DATA[2].navPath} element={<ContactUs />} />
                     <Route path={NAV_DATA[3].navPath} element={<Blog />} />
+                    <Route path={NAV_DATA[4].navPath} element={<CreateAccount />} />
                     {/* <Route path={NAV_DATA[4].navPath} element={<Pricing />} /> */}
                     <Route path="/services" element={<Services />} />
                     <Route path='/services'>

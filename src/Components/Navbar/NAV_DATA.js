@@ -9,10 +9,6 @@ const NAV_DATA = [
         navTitle: "About",
         navPath: "/about"
     },
-    // {
-    //     navTitle: "Partners",
-    //     navPath: "/partners"
-    // },
     {
         navTitle: "Contact Us",
         navPath: "/contactUs"
@@ -21,6 +17,14 @@ const NAV_DATA = [
         navTitle: "Blog",
         navPath: "/blog"
     },
+    {
+        navTitle: "Create Account",
+        navPath: "/create-account"
+    },
+    // {
+    //     navTitle: "Partners",
+    //     navPath: "/partners"
+    // },
     // {
     //     navTitle: "Pricing",
     //     navPath: "/pricing"

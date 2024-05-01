@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        nekst: ['Nekst', 'sans-serif'],
+      },
       colors: {
         'purple': '#5f29b7',
       },
