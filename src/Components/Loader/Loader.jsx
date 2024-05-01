@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 
 const Loader = () => {
 
-
   useEffect(() => {
 
     gsap.to(".LoaderDiv", {

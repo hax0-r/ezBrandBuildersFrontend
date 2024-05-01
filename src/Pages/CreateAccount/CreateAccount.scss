@@ -84,6 +84,13 @@
                 .thirdRowRegistration {
                     display: unset;
                 }
+                .lastName,
+                .registrationEmail,
+                .registrationNumber,
+                .registrationPassword,
+                .registrationPasswordConfirmed {
+                    margin-top: 1.5rem;
+                }
 
 
             }
@@ -98,13 +105,7 @@
 
             .registrationInputs {
 
-                .lastName,
-                .registrationEmail,
-                .registrationNumber,
-                .registrationPassword,
-                .registrationPasswordConfirmed {
-                    margin-top: 1.5rem;
-                }
+              
 
 
             }
