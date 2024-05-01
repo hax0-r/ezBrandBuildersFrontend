@@ -14,7 +14,7 @@ import WhatsappIcon from './Components/WhatsappIcon'
 function App() {
   return (
     <>
-      {/* <Loader /> */}
+      <Loader />
       <Navbar />
       <Router />
       <ToastContainer
