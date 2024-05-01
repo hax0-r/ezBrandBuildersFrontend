@@ -7,18 +7,22 @@ const Loader = () => {
 
   useEffect(() => {
 
-    gsap.to(".LoaderDiv",{
-      delay:3,
-      duration:.5,
-      top:"-100%",
+    gsap.to(".LoaderDiv", {
+      delay: 3,
+      duration: .5,
+      top: "-100%",
       ease: "power4.in"
     })
-    
+    gsap.to(".LoaderDiv2", {
+      delay: 4,
+      display: "none"
+    })
+
   }, [])
 
   return (
     <>
-      <div className="LoaderDiv">
+      <div className="LoaderDiv LoaderDiv2">
         <span className="loader"></span>
       </div>
     </>
