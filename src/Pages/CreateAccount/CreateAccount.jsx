@@ -31,12 +31,16 @@ const CreateAccount = () => {
             errorNotify("Password Feild is Missing")
         } else if (formDataRegistration.password !== formDataRegistration.confirmedPassword) {
             errorNotify("Password Not Match")
-        } else if (!gender) {
+        } else if (!formDataRegistration.gender) {
             errorNotify("Please select a gender");
         } else {
             successNotify("Register");
         }
     }
+
+    const handleGenderChange = (e) => {
+        setFormDataRegistration({ ...formDataRegistration, gender: e.target.value });
+    };
 
     return (
         <>
@@ -48,46 +52,46 @@ const CreateAccount = () => {
                             <div className='firstRowRegistration gap-5 flex flex-wrap'>
                                 <div className="firstName flex flex-col">
                                     <label htmlFor="">First Name</label>
-                                    <Input name="firstName" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, firstName: e.target.value })} type="text" placeholder="Enter First Name" />
+                                    <Input value={formDataRegistration.firstName} name="firstName" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, firstName: e.target.value })} type="text" placeholder="Enter First Name" />
                                 </div>
                                 <div className="lastName flex flex-col">
                                     <label htmlFor="">Last Name</label>
-                                    <Input name="lastName" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, lastName: e.target.value })} type="text" placeholder="Enter Last Name" />
+                                    <Input value={formDataRegistration.lastName} name="lastName" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, lastName: e.target.value })} type="text" placeholder="Enter Last Name" />
                                 </div>
                             </div>
                             <div className='secondRowRegistration gap-5 flex flex-wrap'>
                                 <div className="registrationEmail flex flex-col">
                                     <label htmlFor="">E-Mail</label>
-                                    <Input name="email" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, email: e.target.value })} type="email" placeholder="Enter Your Email" />
+                                    <Input value={formDataRegistration.email} name="email" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, email: e.target.value })} type="email" placeholder="Enter Your Email" />
                                 </div>
                                 <div className="registrationNumber flex flex-col">
                                     <label htmlFor="">Phone Number</label>
-                                    <Input name="phoneNumber" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, phoneNumber: e.target.value })} type="number" placeholder="Enter Your Phone Number" />
+                                    <Input value={formDataRegistration.phoneNumber} name="phoneNumber" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, phoneNumber: e.target.value })} type="number" placeholder="Enter Your Phone Number" />
                                 </div>
                             </div>
                             <div className='thirdRowRegistration gap-5 flex flex-wrap'>
                                 <div className="registrationPassword flex flex-col">
                                     <label htmlFor="">Password</label>
-                                    <Input name="password" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, password: e.target.value })} type="password" placeholder="Enter Password" />
+                                    <Input value={formDataRegistration.password} name="password" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, password: e.target.value })} type="password" placeholder="Enter Password" />
                                 </div>
                                 <div className="registrationPasswordConfirmed flex flex-col">
                                     <label htmlFor="">Confirmed Password</label>
-                                    <Input name="confirmedPassword" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, confirmedPassword: e.target.value })} type="password" placeholder="Enter Confirmed Password" />
+                                    <Input value={formDataRegistration.confirmedPassword} name="confirmedPassword" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, confirmedPassword: e.target.value })} type="password" placeholder="Enter Confirmed Password" />
                                 </div>
                             </div>
                             <div className="genders flex flex-col ">
                                 <h2>Gender</h2>
                                 <div className='flex subGenders'>
                                     <div className='flex gap-1'>
-                                        <input name="gender" type="radio" value="male" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, gender: e.target.value })} />
+                                        <input name="gender" type="radio" value="male" checked={formDataRegistration.gender === "male"} onChange={handleGenderChange} />
                                         <label htmlFor="">Male</label>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <input name="gender" type="radio" value="female" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, gender: e.target.value })} />
+                                        <input name="gender" type="radio" value="female" checked={formDataRegistration.gender === "female"} onChange={handleGenderChange} />
                                         <label htmlFor="">Female</label>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <input name="gender" type="radio" value="other" onChange={(e) => setFormDataRegistration({ ...formDataRegistration, gender: e.target.value })} />
+                                        <input name="gender" type="radio" value="other" checked={formDataRegistration.gender === "other"} onChange={handleGenderChange} />
                                         <label htmlFor="">Others</label>
                                     </div>
                                 </div>

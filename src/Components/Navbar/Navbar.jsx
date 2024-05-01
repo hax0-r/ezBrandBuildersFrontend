@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { IoCaretForward, IoClose } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
-import { CLOUD_SERVICES, CYBER_SECURITY, DIGITAL_MARKETING, NAV_DATA, SEO , SOFTWARE_DEVELOPMENT, TECHNOLOGY, TalkToUs, WEB_DEVELOPMENT, graphic_designing } from './NAV_DATA';
+import { CLOUD_SERVICES, CYBER_SECURITY, DIGITAL_MARKETING, NAV_DATA, SEO, SOFTWARE_DEVELOPMENT, TECHNOLOGY, TalkToUs, WEB_DEVELOPMENT, graphic_designing } from './NAV_DATA';
 import { IoIosArrowDown } from "react-icons/io";
 import gsap from "gsap";
 import Logo from '../Logo';
 import Button from '../Button/Button';
 import { MdNotificationAdd } from 'react-icons/md';
+import { defaultNotify } from '../Toastify/Toastify';
 
 
 export default function Navbar() {
@@ -36,6 +37,10 @@ export default function Navbar() {
         gsap.to(".left h1", {
             color: "white"
         });
+    }
+
+    const notificationHandler = () => {
+        defaultNotify("🦄 No New Notification")
     }
 
 
@@ -141,7 +146,7 @@ export default function Navbar() {
                             <li className='servicesDropDown'><NavLink to="/contactus">ContactUs</NavLink></li>
                             {/* <li className='servicesDropDown'><NavLink to="/pricing">Pricing</NavLink></li> */}
                             <div className='notificationIcon'>
-                                <MdNotificationAdd id='notificationIcon' />
+                                <MdNotificationAdd id='notificationIcon' onClick={notificationHandler} />
                             </div>
                         </ul>
                         <Link to={TalkToUs.path} target='_blank' >

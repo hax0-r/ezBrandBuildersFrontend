@@ -350,7 +350,9 @@ export default function Home() {
         <div className="page11">
           <div className="main">
             <h1>Do you want professionals to handle your project? Let's discuss it!</h1>
-            <Button button="Talk To Us" />
+            <Link to="https:/Wa.me/+923201091220" target='_blank'>
+              <Button button="Talk To Us" />
+            </Link>
           </div>
         </div>
       </div>

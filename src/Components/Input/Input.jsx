@@ -1,11 +1,13 @@
 import React from 'react'
 import "./Input.scss"
 
-const Input = (props) => {
+const Input = ({ type, placeholder, value, onChange }) => {
+
+
     return (
         <>
             <div className="inputField">
-                <input type={props.type} placeholder={props.placeholder} />
+                <input type={type} value={value} onChange={onChange} placeholder={placeholder} />
             </div>
         </>
     )
