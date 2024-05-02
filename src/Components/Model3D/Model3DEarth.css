@@ -3,3 +3,14 @@
     height: 660px;
     overflow: hidden;
 }
+
+@media (max-width:787px) {
+    .canva3d{
+        height: 500px;
+    }
+}
+@media (max-width:500px) {
+    .canva3d{
+        height: 400px;
+    }
+}

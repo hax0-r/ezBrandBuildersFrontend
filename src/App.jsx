@@ -8,7 +8,6 @@ import Footer from './Components/Footer/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from './Components/Toastify/Toastify'
 import Loader from './Components/Loader/Loader'
-import { useEffect, useState } from 'react'
 import WhatsappIcon from './Components/WhatsappIcon'
 
 function App() {

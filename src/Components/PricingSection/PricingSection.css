@@ -38,11 +38,12 @@
                     color: #FFF;
                     font-family: NekstRegular;
                     letter-spacing: .03rem;
-                    font-size: 3rem;
+                    font-size: clamp(1.8rem, -0.875rem + 8.333vw, 3rem);
                     font-style: normal;
                     font-weight: 400;
                     padding-bottom: 4vmin;
                     text-transform: capitalize;
+                    line-height: 110%;
                 }
 
                 p {
@@ -127,6 +128,7 @@
                 backdrop-filter: blur(26.5px);
                 gap: 4rem;
                 padding: 3rem;
+                /* flex-wrap: wrap; */
 
                 .first {
                     display: flex;
@@ -212,22 +214,6 @@
                         width: 12.9375rem;
                         height: 2.8125rem;
                         flex-shrink: 0;
-                    }
-                }
-
-                @include media(696px) {
-                    .first {
-                        li {
-
-                            &:nth-child(7) {
-                                display: none;
-                            }
-
-                            &:nth-child(8) {
-                                display: none;
-                            }
-
-                        }
                     }
                 }
 
@@ -320,17 +306,6 @@
                         width: 12.9375rem;
                         height: 2.8125rem;
                         flex-shrink: 0;
-                    }
-                }
-
-                @include media(696px) {
-                    .second {
-                        li {
-                            &:nth-child(8) {
-                                display: none;
-                            }
-
-                        }
                     }
                 }
 
@@ -459,16 +434,60 @@
     }
 
 
-    @include media(1040px) {
+    @media (max-width:940px) {
+
         .main {
             .content {
 
                 .CMain {
                     flex-wrap: wrap;
 
+                    .first {
+                        margin-bottom: -1rem;
+                    }
 
-                    .second {
-                        padding: 10vmin 0;
+                    .third {
+                        margin-top: 0rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:500px) {
+
+        .main {
+            .head {
+                flex-direction: column;
+                .left {
+                    p {
+                        /* display: none; */
+                        line-height: 110%;
+                        font-size: 1rem;
+                        color: #ffffff90;
+                    }
+                }
+                .right{
+                    width: 100%;
+                    background-color: #00000000;
+                    gap: .5rem;
+                    button{
+                        border: 0.06rem solid rgb(64, 46, 92);
+                    }
+                }
+            }
+
+            .content {
+
+                .CMain {
+                    flex-wrap: wrap;
+
+                    .first {
+                        margin-bottom: -1rem;
+                    }
+
+                    .third {
+                        margin-top: 0rem;
                     }
                 }
             }

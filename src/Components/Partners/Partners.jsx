@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Partners.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,10 +7,37 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 const Partners = () => {
+    const [slidesToShow, setSlidesToShow] = useState(1);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 400) {
+                setSlidesToShow(1);
+            }
+            else if (screenWidth < 660) {
+                setSlidesToShow(2);
+            }
+            else if (screenWidth < 860) {
+                setSlidesToShow(3);
+            } else if (screenWidth < 1100) {
+                setSlidesToShow(4);
+            } else {
+                setSlidesToShow(5);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <>
             <Swiper
-                slidesPerView={5}
+                slidesPerView={slidesToShow}
                 spaceBetween={30}
                 freeMode={true}
                 pagination={{
@@ -28,6 +55,8 @@ const Partners = () => {
                 <SwiperSlide><img src="/Logos/nazra.png" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="/Logos/psyche.jpg" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="/Logos/theAli.png" alt="" /></SwiperSlide>
+                <div className="divider"></div>
+                <div className="divider"></div>
             </Swiper>
         </>
     )

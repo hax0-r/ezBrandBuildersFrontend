@@ -7,15 +7,43 @@ Source: https://sketchfab.com/3d-models/earth-c2e4294c32ea4d8b850e152fc26aeeb4
 Title: earth
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/scene.gltf')
+
+  const [earthSize, setEarthSize] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 500) {
+        setEarthSize(240);
+      }else if (screenWidth < 787) {
+        setEarthSize(250);
+      }
+      else if (screenWidth < 830) {
+        setEarthSize(180);
+      } else if (screenWidth < 980) {
+        setEarthSize(200);
+      } else {
+        setEarthSize(230);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
-        <mesh geometry={nodes.Sphere_Material001_0.geometry} material={materials['Material.001']} rotation={[-Math.PI / 2, 0, -0.262]} scale={230} />
+        <mesh geometry={nodes.Sphere_Material001_0.geometry} material={materials['Material.001']} rotation={[-Math.PI / 2, 0, -0.262]} scale={earthSize} />
       </group>
     </group>
   )

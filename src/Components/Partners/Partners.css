@@ -22,7 +22,8 @@
 }
 
 .swiper-pagination-bullet {
-    display: none !important;
+    /* display: none !important; */
+    background: rgb(255, 255, 255) !important;
 }
 
 .swiper-pagination-bullet-active {

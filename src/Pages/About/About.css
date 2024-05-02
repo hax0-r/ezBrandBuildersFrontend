@@ -171,6 +171,7 @@
 
     .page4 {
         padding: 5vw 3vw 5vw 3vw;
+        padding: calc(8px + 2.8vw);
         background-color: #000;
 
         .main {
@@ -198,7 +199,8 @@
                         background-clip: text;
                         text-fill-color: transparent;
                         font-family: NekstLight;
-                        font-size: 3rem;
+                        font-size: clamp(2.1rem, -0.875rem + 8.333vw, 3.5rem);
+
                         font-weight: 400;
                         line-height: 93%;
                         letter-spacing: -4%;
@@ -363,6 +365,7 @@
 
     .team {
         padding-bottom: 3vw;
+
         .main {
             .head {
                 display: flex;
@@ -370,10 +373,12 @@
                 align-items: center;
                 flex-direction: column;
                 gap: 1.5rem;
+                padding: calc(8px + 2vw);
+
 
                 h1 {
                     color: #FFFFFF;
-                    font-size: clamp(2.5rem, 1rem + 2vw, 3.5rem);
+                    font-size: clamp(1.8rem, -0.875rem + 8.333vw, 3rem);
                     font-weight: 700;
                 }
 
@@ -391,7 +396,7 @@
             .content {
                 max-width: 80rem;
                 margin: auto;
-                padding: 3rem ;
+                padding: 3rem;
             }
         }
     }
@@ -435,8 +440,15 @@
 
                 p {
                     color: #ffffff82;
+                    text-align: center;
                 }
             }
+        }
+    }
+
+    @media (max-width:680px) {
+        .numberCounter {
+            display: none;
         }
     }
 
@@ -452,10 +464,11 @@
 
             h1 {
                 color: #ffffff;
-                font-size: 3.2rem;
+                font-size: clamp(1.8rem, -0.875rem + 8.333vw, 3rem);
                 text-align: center;
             }
-            p{
+
+            p {
                 padding: 1rem 0 3.8rem 0;
                 color: #ffffffaf;
                 max-width: 50rem;
