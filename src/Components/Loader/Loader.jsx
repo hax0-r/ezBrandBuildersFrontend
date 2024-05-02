@@ -10,13 +10,9 @@ const Loader = () => {
       delay: 3,
       duration: .5,
       top: "-100%",
-      ease: "power4.in"
-    })
-    gsap.to(".LoaderDiv2", {
-      delay: 4,
+      ease: "power4.in",
       display: "none"
     })
-
   }, [])
 
   return (

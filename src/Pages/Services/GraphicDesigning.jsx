@@ -25,7 +25,7 @@ export default function GraphicDesigning() {
             <div className="ServicesPage">
                 <div className="page1">
                     <div className="main">
-                        <h1>Digital <br />Marketing</h1>
+                        <h1>Graphic <br /> Designing</h1>
                         <p>Discover unparalleled service excellence with our top-tier provider, delivering excellence in every interaction</p>
                     </div>
                 </div>

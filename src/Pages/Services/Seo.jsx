@@ -25,7 +25,7 @@ export default function Seo() {
             <div className="ServicesPage">
                 <div className="page1">
                     <div className="main">
-                        <h1>Software <br /> Development</h1>
+                        <h1>SEO</h1>
                         <p>Discover unparalleled service excellence with our top-tier provider, delivering excellence in every interaction</p>
                     </div>
                 </div>
