@@ -14,7 +14,7 @@ function Logo() {
                 path.style.strokeDashoffset = '0';
                 path.style.fill = '#ffffff';
             });
-        }, 3400);
+        }, 4000);
 
         return () => clearTimeout(logoAnimation);
     }, []);

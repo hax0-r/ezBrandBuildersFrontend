@@ -38,9 +38,9 @@
 
         h1 {
             font-family: NekstRegular;
-            font-size: 5.66rem;
+            font-size: clamp(1.5rem, -0.875rem + 8.333vw, 4rem);
             font-weight: 400;
-            line-height: 95%;
+            line-height: 110%;
             letter-spacing: -2%;
             max-width: 42.38rem;
             color: #FFFFFF;
@@ -172,9 +172,6 @@
 
     @media (max-width:1560px) {
         .box {
-            h1 {
-                font-size: 4.5rem;
-            }
 
             .right {
                 .main {
@@ -210,9 +207,7 @@
 
         .box {
 
-            h1 {
-                font-size: 4rem;
-            }
+           
 
             .right {
                 .main {
@@ -240,7 +235,6 @@
                 padding-top: 3rem;
                 max-width: 39rem;
                 text-align: center;
-                font-size: 4rem;
             }
         }
     }
@@ -254,7 +248,6 @@
 
             h1 {
                 padding-top: 3rem;
-                font-size: 2rem;
                 max-width: 20rem;
             }
 

@@ -202,7 +202,7 @@ export default function Navbar() {
                                 setOverlayNav(false),
                                     navToggle()
                             }}
-                            to='/signin'>
+                            to="https:/Wa.me/+923201091220">
                             <button >
                                 {TalkToUs.title}
                             </button>

@@ -32,7 +32,7 @@ export default function SignIn() {
     <>
       <div className="signIn">
         <div className="box">
-          <h1>Crypto trading with bots and smart seals</h1>
+          <h1>Sign in & stay updated on your professional bussiness</h1>
           <form onSubmit={onSubmitHandler}>
             <div className="right">
               <div className="main">
