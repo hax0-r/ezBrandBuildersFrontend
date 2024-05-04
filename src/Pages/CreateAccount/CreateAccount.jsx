@@ -36,6 +36,17 @@ const CreateAccount = () => {
         } else {
             successNotify("Register");
         }
+
+        setFormDataRegistration({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phoneNumber: "",
+            password: "",
+            confirmedPassword: "",
+            gender: ""
+        })
+
     }
 
     const handleGenderChange = (e) => {
