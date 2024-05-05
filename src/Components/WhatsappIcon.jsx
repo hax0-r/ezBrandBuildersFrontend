@@ -23,7 +23,7 @@ const WhatsappIcon = () => {
 
     return (
         <>
-            <Link to="https:/Wa.me/+923201091220">
+            <Link to="https://api.whatsapp.com/send/?phone=%2B923201091220&text&type=phone_number&app_absent=0" target='_blank'>
                 <div id='shakeElement' className="whatsappIcon  text-5xl text-[#845dc2] fixed bottom-7 right-5 cursor-pointer hover:text-purple hover:bottom-9 z-10 duration-200 transition-all">
                     <FaWhatsapp />
                 </div>

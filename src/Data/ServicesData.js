@@ -175,7 +175,7 @@ export const ServicesData = [
 
     {
         category: "Technology Training",
-        title: "Customize",
+        title: "Technology Training",
         description: "Design and develop a responsive website that is fully functional on all devices. This includes creating custom layouts, designing"
     },
 

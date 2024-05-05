@@ -127,14 +127,14 @@ export default function Navbar() {
                                             </div>
                                         </div>
                                         <div className='sub-dropdown'>
-                                            <Link to="/services/technology-training">Technology Training <span>...</span> <IoCaretForward /></Link>
-                                            <div className="sub-div">
+                                            <Link to="/services/ServicesCardPages/Technology Training">Technology Training <span>...</span> </Link>
+                                            {/* <div className="sub-div">
                                                 {
                                                     TECHNOLOGY.map(({ title, path }, index) => (
                                                         <Link key={index} to={path}>{title}</Link>
                                                     ))
                                                 }
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                     </ul>
@@ -202,7 +202,7 @@ export default function Navbar() {
                                 setOverlayNav(false),
                                     navToggle()
                             }}
-                            to="https:/Wa.me/+923201091220">
+                            to="https://api.whatsapp.com/send/?phone=%2B923201091220&text&type=phone_number&app_absent=0">
                             <button >
                                 {TalkToUs.title}
                             </button>

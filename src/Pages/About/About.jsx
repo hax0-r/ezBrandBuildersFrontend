@@ -69,7 +69,7 @@ export default function About() {
         <div className="awarded">
           <div className="main">
             <h1> AWARDS & RECOGNITION</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse odio fugiat culpa consectetur illo ea quidem laborum error repellendus veniam?</p>
+            <p>Unlock your potential with our marketing services and pave the way to prestigious awards and recognition in your industry</p>
             <div className="content">
               <Partners />
             </div>
