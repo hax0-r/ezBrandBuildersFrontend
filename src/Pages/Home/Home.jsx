@@ -32,8 +32,8 @@ export default function Home() {
               <div>
                 <h1 className='gsap_p1_head'>
                   <TextAnimation
-                    firstLine="Brand Builders"
-                    secondLine="Solve IT"
+                    firstLine="Building Brand"
+                    secondLine="& Solve IT"
                     thirdLine="Challenges"
                   />
                   {/* <span>& Solving IT Challenges</span> */}
