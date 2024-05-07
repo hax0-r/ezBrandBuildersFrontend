@@ -172,6 +172,17 @@
                 }
             }
         }
+        @media (max-width:500px) {
+            .mainContainer {
+
+                .content {
+
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
     }
 
     .Services {

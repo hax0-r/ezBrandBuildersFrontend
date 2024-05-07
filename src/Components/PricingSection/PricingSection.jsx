@@ -7,8 +7,8 @@ const PricingSection = () => {
 
     const [currency, setCurrency] = useState("USD");
     const [prices, setPrices] = useState({
-        USD: { basic: 29, professional: 39, premium: 120 },
-        PKR: { basic: 6999, professional: 11999, premium: 20000 }
+        USD: { basic: 39, professional: 79, premium: 120 },
+        PKR: { basic: 7999, professional: 12999, premium: 20000 }
     });
 
     const currencyHandler = (selectedCurrency) => {
@@ -36,7 +36,7 @@ const PricingSection = () => {
                                 <h3>Basic</h3>
                                 <p>Unleash the power of automation.</p>
                                 <li> <FaCheck /> 2 Social Network</li>
-                                <li> <FaCheck /> 13 Posts Per Month</li>
+                                <li> <FaCheck /> 10 Posts Per Month</li>
                                 <li> <FaCheck /> Basic Content Research</li>
                                 <li> <FaCheck /> Platfrom Maintainance </li>
                                 <li> <FaCheck /> Monthly Report </li>
@@ -48,8 +48,8 @@ const PricingSection = () => {
                                 <h1>{currency === "USD" ? `$${prices.USD.professional}` : `${prices.PKR.professional}`} <span> /month</span> </h1>
                                 <h3>Advance</h3>
                                 <p>Advanced tools to take your work to the next level.</p>
-                                <li> <FaCheck /> 5 Social Network</li>
-                                <li> <FaCheck /> 30 Posts per Month</li>
+                                <li> <FaCheck /> 3 Social Network</li>
+                                <li> <FaCheck /> 20 Posts per Month</li>
                                 <li> <FaCheck /> Advance Content Research </li>
                                 <li> <FaCheck /> Platfrom Maintainance</li>
                                 <li> <FaCheck /> Weekly Report</li>
