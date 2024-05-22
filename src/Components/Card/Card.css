@@ -32,4 +32,14 @@
         letter-spacing: -4%;
     }
 
+    @media (max-width:1450px) {
+
+        width: 16rem;
+        height: 21rem;
+
+        h2 {
+            font-size: clamp(1.3rem, -0.875rem + 8.333vw, 1.5rem);
+        }
+    }
+
 }

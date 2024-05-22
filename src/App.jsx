@@ -9,10 +9,16 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from './Components/Toastify/Toastify'
 import Loader from './Components/Loader/Loader'
 import WhatsappIcon from './Components/WhatsappIcon'
+import { Helmet } from 'react-helmet'
 
 function App() {
   return (
     <>
+
+      <Helmet>
+        <title>EZ Brand Builders</title>
+        <meta name='description' content='We provide top-tier IT services which your business needs. With expertise in Web Development, Digital Marketing, Cyber Security, Cloud Services, Software Development, Technology Trainig.Our expert team ensures efficiency and security for your operations.' />
+      </Helmet>
       <Loader />
       <Navbar />
       <Router />
@@ -28,8 +34,8 @@ function App() {
         pauseOnHover
         theme="dark"
       />
-      <Footer />
       <WhatsappIcon />
+      <Footer />
     </>
   )
 }

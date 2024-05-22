@@ -172,6 +172,7 @@
                 }
             }
         }
+
         @media (max-width:500px) {
             .mainContainer {
 
@@ -2031,16 +2032,18 @@
                 }
             }
         }
+     
 
         @media (max-width:500px) {
-            .main{
+            .main {
                 .left {
                     gap: 1.5rem;
                     padding: 3.5rem 1rem 0 1rem;
-                    p{
+
+                    p {
                         font-size: 1rem;
                     }
-    
+
                 }
             }
         }
