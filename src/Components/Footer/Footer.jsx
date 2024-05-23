@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className="first">
                         <Logo />
                         <h6>Get a free consultation by registering now.</h6>
-                        <p>copyrights © 2024  ezbrand builders  solution. All right reserved </p>
+                        <p>copyrights © 2019  ezbrand builders  solution. All right reserved </p>
                     </div>
                     <div className="second">
                         <p>We are in social networks</p>
