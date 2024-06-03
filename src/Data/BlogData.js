@@ -5,6 +5,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -12,6 +13,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -19,6 +21,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -26,6 +29,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -33,6 +37,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -40,6 +45,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -47,6 +53,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -54,6 +61,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -61,6 +69,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -68,6 +77,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -75,6 +85,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -82,6 +93,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -89,6 +101,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -96,6 +109,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -103,6 +117,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -110,6 +125,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -117,6 +133,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -124,6 +141,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -131,6 +149,7 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
     {
         image: "/Blog/Images/blog1.jpg",
@@ -138,5 +157,6 @@ export const BlogData = [
         description: "welcome to new blog welcome to new blogwelcome to new blogwelcome to new blogwelcome to new blog",
         authorImage: "/Blog/AuthorImages/Talha.png",
         authorName: "Muhammad Talha",
+        category:"Deveopment"
     },
 ]

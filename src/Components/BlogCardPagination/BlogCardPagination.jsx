@@ -36,16 +36,16 @@ const BlogCardPagination = () => {
     return (
         <>
             <div className="blogCard">
-                {pageData.map(({ title, description, authorImage, image, authorName }, index) => (
+                {pageData.map(({ title, description, authorImage, image, authorName, category }, index) => (
                     <div className="blogMain">
                         <img src={image} alt="" />
                         <h1>{title}</h1>
-                        <p>{description}</p>
+                        <p>{description.slice(0, 96)}...</p>
                         <div className="blogCardProfile">
                             <img src={authorImage} alt="" />
                             <div className='blogCardProfileContent'>
                                 <h2>{authorName}</h2>
-                                <p>2d ago</p>
+                                <p>{category}</p>
                             </div>
                         </div>
                     </div>
