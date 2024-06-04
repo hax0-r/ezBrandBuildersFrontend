@@ -27,28 +27,28 @@ export default function Router() {
 
     return (
         <>
-                <Routes location={location} key={location.pathname}>
-                    <Route path={NAV_DATA[0].navPath} element={<Home />} />
-                    <Route path={NAV_DATA[1].navPath} element={<About />} />
-                    <Route path={NAV_DATA[2].navPath} element={<ContactUs />} />
-                    <Route path={NAV_DATA[3].navPath} element={<Blog />} />
-                    <Route path={NAV_DATA[4].navPath} element={<CreateAccount />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/sub-blog/:id" element={<SubBlog />} />
-                    <Route path='/services'>
-                        <Route path="web-development" element={<WebDevelopment />} />
-                        <Route path="digital-marketing" element={<DigitalMarketing />} />
-                        <Route path="cyber-security" element={<CyberSecurity />} />
-                        <Route path="cloud-services" element={<CloudeServices />} />
-                        <Route path="software-development" element={<SoftwareDevelopment />} />
-                        <Route path="technology-training" element={<TechnologyTaning />} />
-                        <Route path="graphic-designing" element={<GraphicDesigning />} />
-                        <Route path="seo" element={<Seo />} />
-                        <Route path="ServicesCardPages/:id" element={<ServicesCardPages />} />
-                    </Route>
-                    <Route path='/signin' element={<SignIn />} />
-                    <Route path='*' element={<Error />} />
-                </Routes>
+            <Routes location={location} key={location.pathname}>
+                <Route path={NAV_DATA[0].navPath} element={<Home />} />
+                <Route path={NAV_DATA[1].navPath} element={<About />} />
+                <Route path={NAV_DATA[2].navPath} element={<ContactUs />} />
+                <Route path={NAV_DATA[3].navPath} element={<Blog />} />
+                <Route path={NAV_DATA[4].navPath} element={<CreateAccount />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/sub-blog/:id" element={<SubBlog />} />
+                <Route path='/services'>
+                    <Route path="web-development" element={<WebDevelopment />} />
+                    <Route path="digital-marketing" element={<DigitalMarketing />} />
+                    <Route path="cyber-security" element={<CyberSecurity />} />
+                    <Route path="cloud-services" element={<CloudeServices />} />
+                    <Route path="software-development" element={<SoftwareDevelopment />} />
+                    <Route path="technology-training" element={<TechnologyTaning />} />
+                    <Route path="graphic-designing" element={<GraphicDesigning />} />
+                    <Route path="seo" element={<Seo />} />
+                    <Route path="ServicesCardPages/:id" element={<ServicesCardPages />} />
+                </Route>
+                <Route path='/signin' element={<SignIn />} />
+                <Route path='*' element={<Error />} />
+            </Routes>
         </>
     );
 }
