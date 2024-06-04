@@ -19,35 +19,14 @@ import Seo from '../Pages/Services/Seo';
 import GraphicDesigning from '../Pages/Services/GraphicDesigning';
 import Blog from '../Pages/Blog/Blog';
 import ServicesCardPages from '../Pages/Services/ServicesCardPages/ServicesCardPages';
-import { AnimatePresence } from 'framer-motion';
 import CreateAccount from '../Pages/CreateAccount/CreateAccount';
+import SubBlog from '../Pages/Blog/SubBlog';
 
 export default function Router() {
     const location = useLocation();
-    const scrollPositions = useRef({});
-
-    useEffect(() => {
-        if (scrollPositions.current[location.pathname]) {
-            window.scrollTo(0, scrollPositions.current[location.pathname]);
-        } else {
-            window.scrollTo(0, 0);
-        }
-    }, [location.pathname]);
-
-    const handleScroll = () => {
-        scrollPositions.current[location.pathname] = window.scrollY;
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [location.pathname]);
 
     return (
         <>
-            <AnimatePresence mode='wait'>
                 <Routes location={location} key={location.pathname}>
                     <Route path={NAV_DATA[0].navPath} element={<Home />} />
                     <Route path={NAV_DATA[1].navPath} element={<About />} />
@@ -55,6 +34,7 @@ export default function Router() {
                     <Route path={NAV_DATA[3].navPath} element={<Blog />} />
                     <Route path={NAV_DATA[4].navPath} element={<CreateAccount />} />
                     <Route path="/services" element={<Services />} />
+                    <Route path="/sub-blog/:id" element={<SubBlog />} />
                     <Route path='/services'>
                         <Route path="web-development" element={<WebDevelopment />} />
                         <Route path="digital-marketing" element={<DigitalMarketing />} />
@@ -69,7 +49,6 @@ export default function Router() {
                     <Route path='/signin' element={<SignIn />} />
                     <Route path='*' element={<Error />} />
                 </Routes>
-            </AnimatePresence>
         </>
     );
 }
