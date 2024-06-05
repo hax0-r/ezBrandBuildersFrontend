@@ -15,9 +15,9 @@ const SubBlog = () => {
 
     return (
         <>
-            <div className="bg-black py-5 text-white">
+            <div className=" bg-gradient-to-t from-[#171022] from-10% via-[#1d0d39] via-30% to-[#000] to-90% py-5 text-white">
                 <img className='h-[30rem] w-full object-cover' src={blogPg.image} alt="" />
-                <div className="max-w-[80rem] py-10 m-auto px-10 w-full ">
+                <div className="max-w-[80rem] subBlog py-10 m-auto px-10 w-full ">
                     <h1 className='text-[2.8rem] font-medium'>{blogPg.title}</h1>
                     <h3 className='opacity-40'>{blogPg.subTitle}</h3> <br />
                     <p className='opacity-80 tracking-wider text-[1.05rem]'>{blogPg.description}</p> <br />
@@ -41,8 +41,8 @@ const SubBlog = () => {
                     <p className='opacity-80 tracking-wider text-[1.05rem]'>{blogPg.description10}</p> <br />
                     <h2 className='text-[1.7rem] py-3 pt-5 '>{blogPg.heading11} </h2>
                     <p className='opacity-80 tracking-wider text-[1.05rem]'>{blogPg.description11}</p> <br />
-                    <h2 className='text-[1.7rem] py-3 pt-5 '>{blogPg.heading12} </h2>
-                    <p className='opacity-80'>{blogPg.description12}</p> <br />
+                    <h2 className='text-[1.7rem] py-3 pt-5 '>{blogPg.Conclusion} </h2>
+                    <p className='opacity-80'>{blogPg.ConclusionDescription}</p> <br />
                 </div>
             </div>
         </>

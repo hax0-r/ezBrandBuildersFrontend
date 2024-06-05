@@ -16,10 +16,14 @@
         cursor: pointer;
         overflow: hidden;
         transition: 200ms all;
+        animation: BlogCardPagination linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
 
         &:hover {
             border: 2px solid rgba(255, 255, 255, 0.689);
-            img{
+
+            img {
                 filter: brightness(1);
             }
         }
@@ -96,5 +100,18 @@
             padding: .5rem .8rem;
 
         }
+    }
+}
+
+
+@keyframes BlogCardPagination {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0%);
+        opacity: 1;
     }
 }
