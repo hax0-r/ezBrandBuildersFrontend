@@ -41,7 +41,7 @@ const BlogCardPagination = () => {
                     <Link to={`/sub-blog/${title}`}>
                         <div key={index} className="blogMain">
                             <img src={image} alt="" />
-                            <h1>{title}</h1>
+                            <h1>{title.slice(0, 50)}...</h1>
                             <p>{description.slice(0, 96)}...</p>
                             <div className="blogCardProfile">
                                 <img src={authorImage} alt="" />
