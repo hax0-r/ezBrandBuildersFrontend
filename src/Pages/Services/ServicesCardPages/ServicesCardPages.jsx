@@ -20,8 +20,11 @@ const ServicesCardPages = () => {
             <div className="ServicesCardPages">
                 <div className="main">
                     <h1>{card.title}</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum dolores ipsa in necessitatibus inventore sit aperiam voluptatem tempora dolorum, dolor ea laudantium a, numquam voluptatum odit accusantium itaque ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse nemo nihil fuga rerum qui eaque pariatur voluptas a inventore. dolor sit amet consectetur adipisicing elit. Natus eum dolores ipsa in necessitatibus inventore sit aperiam voluptatem tempora dolorum, dolor ea laudantium a, numquam voluptatum odit accusantium itaque ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse nemo nihil fuga rerum qui eaque pariatur voluptas a inventore</p><br />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum dolores ipsa in necessitatibus inventore sit aperiam voluptatem tempora dolorum, dolor ea laudantium a, numquam voluptatum odit accusantium itaque ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse nemo nihil fuga rerum qui eaque pariatur voluptas a inventore. dolor sit amet consectetur adipisicing elit. Natus eum dolores ipsa in necessitatibus inventore sit aperiam voluptatem tempora dolorum, dolor ea laudantium a, numquam voluptatum odit accusantium itaque ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse nemo nihil fuga rerum qui eaque pariatur voluptas a inventore</p>
+                    <p>{card.subDescription1}</p><br />
+                    <p>{card.subDescription2}</p><br />
+                    <p>{card.subDescription3}</p><br />
+                    <p>{card.subDescription4}</p><br />
+                    <p>{card.subDescription5}</p>
                     <div id="ServicesCardPagesBtn">
                         <Button button="Get it" />
                     </div>

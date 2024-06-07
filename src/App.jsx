@@ -19,7 +19,7 @@ function App() {
         <title>EZ Brand Builders</title>
         <meta name='description' content='We provide top-tier IT services which your business needs. With expertise in Web Development, Digital Marketing, Cyber Security, Cloud Services, Software Development, Technology Trainig.Our expert team ensures efficiency and security for your operations.' />
       </Helmet>
-      <Loader />
+      {/* <Loader /> */}
       <Navbar />
       <Router />
       <ToastContainer

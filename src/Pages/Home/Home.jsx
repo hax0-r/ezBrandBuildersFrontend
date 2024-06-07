@@ -16,11 +16,42 @@ import ScrollProgress from '../../Components/ScrollProgress';
 import Loader from '../../Components/Loader/Loader';
 import TextAnimation from '../../Components/TextAnimation/TextAnimation';
 import { Link } from 'react-router-dom';
-
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 
+  gsap.from(".home .Services .main .box .right .card", {
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    delay: 0.5,
+    stagger: 0.5,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: ".home .Services .main .box",
+      start: "top 95%",
+      end: "bottom 80%",
+      scrub: true,
+      // markers: true
+    }
+  })
+
+  gsap.from(".home .main .pg2Container .cardDiv .card ", {
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    delay: 0.5,
+    borderColor:"white",
+    stagger: 0.5,
+    ease: "power3.inOut",
+    scrollTrigger: {
+      trigger: ".home .main .pg2Container",
+      start: "top 95%",
+      end: "bottom 80%",
+      scrub: true,
+    }
+  })
 
   return (
     <>
