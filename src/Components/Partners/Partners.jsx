@@ -50,11 +50,11 @@ const Partners = () => {
                 }}
                 className="mySwiper"
             >
-                <SwiperSlide><img src="/Logos/alFalak.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="/Logos/drSidra.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="/Logos/nazra.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="/Logos/psyche.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="/Logos/theAli.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="/Logos/alFalak.png" alt="image" /></SwiperSlide>
+                <SwiperSlide><img src="/Logos/drSidra.png" alt="image" /></SwiperSlide>
+                <SwiperSlide><img src="/Logos/nazra.png" alt="image" /></SwiperSlide>
+                <SwiperSlide><img src="/Logos/psyche.jpg" alt="image" /></SwiperSlide>
+                <SwiperSlide><img src="/Logos/theAli.png" alt="image" /></SwiperSlide>
                 <div className="divider"></div>
                 <div className="divider"></div>
             </Swiper>

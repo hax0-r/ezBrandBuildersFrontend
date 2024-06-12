@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <div className="container">
               <div className="left">
-                <img src={pg3} alt="" />
+                <img src={pg3} alt="image" />
               </div>
               <div className="right">
                 <h1>SEO</h1>
@@ -209,7 +209,7 @@ export default function Home() {
                   game and unlock new opportunities.</h4>
               </div>
               <div className="right">
-                <img src={pg4} alt="" />
+                <img src={pg4} alt="image" />
               </div>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function Home() {
               <p>Highest Security</p>
             </div>
             <div className="box">
-              <img src={pg9} alt="" />
+              <img src={pg9} alt="image" />
               <div className="right">
                 <div className="card">
                   <h2>Cloud Security</h2>
@@ -327,7 +327,7 @@ export default function Home() {
               <h1>Who we are</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, in velit. Quia, rerum voluptate vel excepturi autem asperiores vitae explicabo qui adipisci labore repellat eligendi cumque magnam corporis perferendis? Voluptate consectetur at omnis dolores quo minima maiores ad est. Laborum, natus? Laborum quod beatae neque ex, hic vero nulla suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio magnam commodi enim vel. Voluptate illum id illo corrupti dicta quod ipsum, ducimus quis provident voluptates quidem praesentium. Quisquam voluptatem doloremque necessitatibus ullam enim neque, quaerat similique impedit amet doloribus laborum aliquid officiis itaque ipsum! Architecto quod soluta assumenda officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aspernatur mollitia et necessitatibus eaque consectetur repellat perferendis, beatae voluptate delectus quas, magni vel incidunt dolores expedita assumenda, ipsum quos! Vel voluptates amet accusantium fuga explicabo tempore, autem asperiores, deleniti esse corporis illum at, soluta fugit temporibus nam reprehenderit unde optio. </p>
             </div>
-            <img src={man} alt="" />
+            <img src={man} alt="image" />
           </div>
         </div> */}
 

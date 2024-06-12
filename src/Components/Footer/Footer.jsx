@@ -17,7 +17,7 @@ export default function Footer() {
                 <div className="main">
                     <div className="first">
                         <Logo />
-                        <h6>Get a free consultation by registering now.</h6>
+                        <h6>At EZ Brand Builders, we provide top-tier IT services which your business needs. With expertise in Web Development, Digital Marketing, Cyber Security, Cloud Services, Software Development, Technology Trainig.Our expert team ensures efficiency and security for your operations.</h6>
                         <p>copyrights © 2019  ezbrand builders  solution. All right reserved </p>
                     </div>
                     <div className="second">
